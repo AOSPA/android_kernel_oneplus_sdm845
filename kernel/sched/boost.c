@@ -176,6 +176,7 @@ static void _sched_set_boost(int type)
 			if (!boost_refcount[RESTRAINED_BOOST])
 				walt_enable_frequency_aggregation(false);
 		}
+		break;
 
 	default:
 		WARN_ON(1);
