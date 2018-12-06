@@ -59,7 +59,11 @@ current_dir := $(notdir $(patsubst %/,%,$(dir $(mkfile_path))))
 TARGET_KERNEL := msm-$(TARGET_KERNEL_VERSION)
 ifeq ($(TARGET_KERNEL),$(current_dir))
     # New style, kernel/msm-version
-    BUILD_ROOT_LOC := ../../
+    ifeq ($(strip $(shell echo $(TARGET_OUT_INTERMEDIATES) | head -c 1)), /)
+        BUILD_ROOT_LOC := ''
+    else
+        BUILD_ROOT_LOC := ../../
+    endif
     TARGET_KERNEL_SOURCE := kernel/$(TARGET_KERNEL)
     KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/kernel/$(TARGET_KERNEL)
     KERNEL_SYMLINK := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
@@ -67,7 +71,11 @@ ifeq ($(TARGET_KERNEL),$(current_dir))
 else
     # Legacy style, kernel source directly under kernel
     KERNEL_LEGACY_DIR := true
-    BUILD_ROOT_LOC := ../
+    ifeq ($(strip $(shell echo $(TARGET_OUT_INTERMEDIATES) | head -c 1)), /)
+        BUILD_ROOT_LOC := ''
+    else
+        BUILD_ROOT_LOC := ../
+    endif
     TARGET_KERNEL_SOURCE := kernel
     KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 endif
