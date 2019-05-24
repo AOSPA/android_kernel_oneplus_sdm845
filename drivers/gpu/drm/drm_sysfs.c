@@ -277,12 +277,7 @@ static ssize_t acl_show(struct device *dev,
 
 	acl_mode = dsi_display_get_acl_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "acl mode = %d\n"
-					"0--acl mode(off)\n"
-					"1--acl mode(5)\n"
-					"2--acl mode(10)\n"
-					"3--acl mode(15)\n",
-					acl_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n",	acl_mode);
 	return ret;
 }
 
@@ -315,14 +310,7 @@ static ssize_t hbm_show(struct device *dev,
 
 	hbm_mode = dsi_display_get_hbm_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "hbm mode = %d\n"
-					"0--hbm mode(off)\n"
-					"1--hbm mode(464)\n"
-					"2--hbm mode(498)\n"
-					"3--hbm mode(532)\n"
-					"4--hbm mode(566)\n"
-					"5--hbm mode(600)\n",
-					hbm_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", hbm_mode);
 	return ret;
 }
 
@@ -354,10 +342,7 @@ static ssize_t op_friginer_print_hbm_show(struct device *dev,
 
 	op_hbm_mode = dsi_display_get_fp_hbm_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "OP_FP mode = %d\n"
-			"0--finger-hbm mode(off)\n"
-			"1--finger-hbm mode(600)\n",
-			op_hbm_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", op_hbm_mode);
 	return ret;
 }
 
@@ -423,13 +408,7 @@ static ssize_t aod_test_show(struct device *dev,
 
 	aod_mode = dsi_display_get_aod_mode_test(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "AOD mode = %d\n"
-			"0--AOD off\n"
-			"1--AOD(10nit-alpm)\n"
-			"2--AOD(50nit-alpm)\n"
-			"3--AOD(10nit-hlpm)\n"
-			"4--AOD(50nit-hlpm)\n",
-			aod_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", aod_mode);
 	return ret;
 }
 
@@ -462,10 +441,7 @@ static ssize_t aod_disable_show(struct device *dev,
 
 	aod_disable = dsi_display_get_aod_disable(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "AOD disable = %d\n"
-			"0--AOD enable\n"
-			"1--AOD disable\n",
-			aod_disable);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", aod_disable);
 	return ret;
 }
 
@@ -561,10 +537,7 @@ static ssize_t panel_mismatch_show(struct device *dev,
 	dsi_display_panel_mismatch_check(connector);
 
 	wrong_panel = dsi_display_panel_mismatch(connector);
-	ret = scnprintf(buf, PAGE_SIZE, "panel mismatch = %d\n"
-			"0--(panel match)\n"
-			"1--(panel mismatch)\n",
-			wrong_panel);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", wrong_panel);
 	return ret;
 }
 
@@ -607,11 +580,8 @@ static ssize_t oneplus_display_get_forcescreenfp(struct device *dev,
 
 	oneplus_force_screenfp = dsi_display_get_fp_hbm_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "OP_FP mode = %d\n"
-			"0--finger-hbm mode(off)\n"
-			"1--finger-hbm mode(600)\n",
-			oneplus_force_screenfp);
-	return snprintf(buf, PAGE_SIZE, "%d\n", oneplus_force_screenfp);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", oneplus_force_screenfp);
+	return ret;
 
 }
 
@@ -708,10 +678,7 @@ static ssize_t native_display_p3_mode_show(struct device *dev,
 
 	native_display_p3_mode = dsi_display_get_native_display_p3_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "native display p3 mode = %d\n"
-											"0--native display p3 mode Off\n"
-											"1--native display p3 mode On\n",
-											native_display_p3_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", native_display_p3_mode);
 	return ret;
 }
 
@@ -743,10 +710,7 @@ static ssize_t native_display_wide_color_mode_show(struct device *dev,
 
 	native_display_wide_color_mode = dsi_display_get_native_display_wide_color_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "native display wide color mode = %d\n"
-											"0--native display wide color mode Off\n"
-											"1--native display wide color mode On\n",
-											native_display_wide_color_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", native_display_wide_color_mode);
 	return ret;
 }
 
@@ -779,10 +743,7 @@ static ssize_t native_display_customer_p3_mode_show(struct device *dev,
 
 	native_display_customer_p3_mode = dsi_display_get_customer_p3_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "native display customer p3 mode = %d\n"
-											"0--native display customer p3 mode Off\n"
-											"1--native display customer p3 mode On\n",
-											native_display_customer_p3_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", native_display_customer_p3_mode);
 	return ret;
 }
 static ssize_t native_display_customer_srgb_mode_store(struct device *dev,
@@ -814,10 +775,7 @@ static ssize_t native_display_customer_srgb_mode_show(struct device *dev,
 
 	native_display_customer_srgb_mode = dsi_display_get_customer_srgb_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "native display customer srgb mode = %d\n"
-											"0--native display customer srgb mode Off\n"
-											"1--native display customer srgb mode On\n",
-											native_display_customer_srgb_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", native_display_customer_srgb_mode);
 	return ret;
 }
 
@@ -851,10 +809,7 @@ static ssize_t native_display_srgb_color_mode_show(struct device *dev,
 
 	native_display_srgb_color_mode = dsi_display_get_native_display_srgb_color_mode(connector);
 
-	ret = scnprintf(buf, PAGE_SIZE, "native display srgb color mode = %d\n"
-											"0--native display srgb color mode Off\n"
-											"1--native display srgb color mode On\n",
-											native_display_srgb_color_mode);
+	ret = scnprintf(buf, PAGE_SIZE, "%d\n", native_display_srgb_color_mode);
 	return ret;
 }
 
