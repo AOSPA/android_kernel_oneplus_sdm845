@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2019, The Linux Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  *
@@ -3114,6 +3114,24 @@ int sde_encoder_idle_request(struct drm_encoder *drm_enc)
 	return 0;
 }
 
+int sde_encoder_get_ctlstart_timeout_state(struct drm_encoder *drm_enc)
+{
+	struct sde_encoder_virt *sde_enc = NULL;
+	int i, count = 0;
+
+	if (!drm_enc)
+		return 0;
+
+	sde_enc = to_sde_encoder_virt(drm_enc);
+
+	for (i = 0; i < sde_enc->num_phys_encs; i++) {
+		count += atomic_read(&sde_enc->phys_encs[i]->ctlstart_timeout);
+		atomic_set(&sde_enc->phys_encs[i]->ctlstart_timeout, 0);
+	}
+
+	return count;
+}
+
 /**
  * _sde_encoder_trigger_flush - trigger flush for a physical encoder
  * drm_enc: Pointer to drm encoder structure
@@ -3599,6 +3617,35 @@ void sde_encoder_trigger_kickoff_pending(struct drm_encoder *drm_enc)
 	}
 }
 
+extern bool sde_crtc_get_fingerprint_mode(struct drm_crtc_state *crtc_state);
+static bool
+_sde_encoder_setup_dither_for_onscreenfingerprint(struct sde_encoder_phys *phys,
+						  void *dither_cfg, int len)
+{
+	struct drm_encoder *drm_enc = phys->parent;
+	struct drm_msm_dither dither;
+
+	if (!drm_enc || !drm_enc->crtc)
+		return -EFAULT;
+
+	if (!sde_crtc_get_fingerprint_mode(drm_enc->crtc->state))
+		return -EINVAL;
+
+	if (len != sizeof(dither))
+		return -EINVAL;
+
+	memcpy(&dither, dither_cfg, len);
+	dither.c0_bitdepth = 6;
+	dither.c1_bitdepth = 6;
+	dither.c2_bitdepth = 6;
+	dither.c3_bitdepth = 6;
+	dither.temporal_en = 1;
+
+	phys->hw_pp->ops.setup_dither(phys->hw_pp, &dither, len);
+
+	return 0;
+}
+
 static void _sde_encoder_setup_dither(struct sde_encoder_phys *phys)
 {
 	void *dither_cfg;
@@ -3649,7 +3696,8 @@ static void _sde_encoder_setup_dither(struct sde_encoder_phys *phys)
 			}
 		}
 	} else {
-		phys->hw_pp->ops.setup_dither(phys->hw_pp, dither_cfg, len);
+		if (_sde_encoder_setup_dither_for_onscreenfingerprint(phys, dither_cfg, len))
+			phys->hw_pp->ops.setup_dither(phys->hw_pp, dither_cfg, len);
 	}
 }
 
