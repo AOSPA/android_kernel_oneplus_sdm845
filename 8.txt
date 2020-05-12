@@ -1,0 +1,1803 @@
+e44cf457164a dfc: Use alarm timer to trigger powersave work
+cdb61d570584 scsi: ufs: complete requests in host reset and restore path
+a14708931783 ARM: dts: msm: Correct the mic bias for VA DMICs
+0753c830b8ad msm: pcie: remove explicit control over L1ss timeout feature
+0d0a56876076 ARM: dts: msm: Fix bluetooth current leakage for SDXPRAIRIE
+de00c563d9b0 net: qualcomm: rmnet: only set flags when given
+bc687a699ac0 msm: ipa: fine tuning HOLB timeout value
+f7cb55ccb310 mhi: core: handle low priority events after controller is ready
+7a24e841aae2 mhi: cntrl: qcom: check sfr support from device tree
+581cdf345529 iommu: arm-smmu: clear TBU halt request when halt times out
+c1ed6f84fefe clk: qcom: gcc: Add support for 50MHz clock
+2dc8fdd02ff5 dt-bindings: qpnp-smb5: Support changing DCIN ICL
+0718f6592798 power: smb5: Set DCIN ICL value via DT
+cb23bd469476 power: qpnp-smb5: Make DC input_voltage_regulation writeable
+57a5baae5f33 power: smb5: Dynamically adjust DCIN ICL
+2fd20e5d2372 power: smb5-lib: Set default WLS VOUT to 5 V when standalone
+2f7dc9dd9f1a msm: pcie: Use local variable for manipulation
+43d19a58c111 msm: ipa3: Fix to recycle the skb before adding to recycle list
+4008d07b9f79 ARM: dts: msm: update PCIe0 PHY setting to v1.02 for sdxprairie v2
+2243fec1efb5 msm: pcie: check root pci dev is valid in msm_pcie_set_link_bandwidth
+c955da1ae9fa defconfig: sa515m: Enable STMMAC driver
+ed9e912ed681 msm-vidc: read efuse data to enable SKU based features
+09a178e159bd ARM: dts: msm: Enable SMMU stage 1 for Slimbus driver on atoll
+4085d6a42dd4 slimbus: slim-msm: Add support to enable IOMMU in atomic context
+20cd165e6ea8 ARM: dts: msm: Enable SMMU stage 1 for QUPv3 drivers on atoll
+44f570e59ba0 platform: qcom-geni-se: Add support to enable IOMMU in atomic context
+9c1549c5647a ARM: dts: msm: Update TUNE1 and TUNE2 values for ATOLL
+b9f3b96c3f65 ARM: dts: msm: update max value of mdp clock for trinket
+f46f2fef3813 ARM: dts: msm: delete only pm8150b related thermal zones for sdxprairie
+a22b58cb1284 clk: qcom: Update frequency plan for hm0 clock for ATOLL
+3f9e8cbb06ad mhi: core: provide an API to retrieve device failure reason
+37ee48dc84d3 net: stmmac: Enable PPS0 on bootup
+8eac6b02cef0 msm: camera: isp: Stop hw before setting HALT substate
+32f75a2f3e4c ARM: dts: msm: Add a default pinctrl mode for atoll QRD
+0201085ba2db ARM: dts: msm: Disable DP AUX gpio pull_down mode for atoll QRD
+ed1387ab6f5b drivers: thermal: bcl_pmic5: filter out BCL spurious interrupts
+7ac419887ebb Arm: dts: Update energy cost data for new available frequency
+bd438d30da07 ARM: dts: msm: add a name to the mhi controller node
+fa7316a311d8 mhi: cntrl: qcom: add support to retrieve device failure reason
+15cd94dded61 mhi: core: add support for retrieving device failure reason
+24bed2a68eeb net: stmmac: Fix build errors
+9687f5b733f9 ARM: dts: msm: Override pinctrl for ethqos in sa515m-ccard
+2dfdc06fba89 defconfig: sdxprairie: Enable Micrel PHY
+79938f281ece net: stmmac: Add support for Micrel PHY interrupt
+b83729498528 ARM: dts: msm: Add ethqos hw node for stmmac in sdxprairie
+8e59e998a1a8 ARM: dts: msm: add pci DT nodes for PCIe switch for sdxprairie
+20bbcedc5d08 ARM: dts: msm: expand iommu-map to support PCIe switch on sdxprairie
+dc82d77549b1 msm: msi: correct HWIRQ mapping for all Synopsys MSI VIRQ
+5460449167c4 msm: msi: increase number of PCIe Synopsys MSI groups to 2
+1dd54e3c5a8e msm: msi: align PCIe Synopsys MSI base IRQ
+4b0703d2086a soc: qcom: glink_probe: Use ref count for holding ssr context
+a8d0981f5427 msm: camera: isp: Correct command type while dumping buffer
+472de75d0f08 crypto: msm: Detach qce driver on unloading
+ffc300ed6b8c arm64: dts: qcs405: update i2s gpio functions
+761d8f6795f7 defconfig: Add CRYPTO config for sdxprairie
+7ce4165dc58e ARM: dts: msm: Add support for RGMII 1.8v
+4bfdb477372d dt-bindings: bus: mhi: add controller name field
+0567048d51bd ARM: dts: msm: Update the clocks for a healthy yield
+9542baeb9277 ARM: dts: msm: Add support for MTP v1.1 for V1 and V2 on sdxprairie target
+2b745f40f983 atlantic forwarding driver v1.0.27
+05afe93a8ca0 atlantic forwarding driver v1.0.26
+28a9f51b698d msm: ipa3: Fix to memory allocation failure
+194586cdc55b ARM: dts: msm: Enable npudsp_npu_ddr_bw for atoll
+a7fdeb6ae699 ARM: dts: msm: Enable smp2p mailbox for atoll
+1f35f55424fa msm: npu: Increase IOMMU mapping size to 4GB
+bce88ce13d5f ARM: dts: msm: Update skin thermal zone mitigation thresholds for ATOLL
+e13a61ce5ae8 usb: gsi: Prevent function remote-wakeup without function suspend
+fced24275e35 qseecom: don't unregister listener when data->released is true
+de445c06a4f4 msm: adsprpc: Remove remote mappings after PD is up
+65ef14fce449 Revert "drm: call clear_payload_id_table when mst mode is enabled"
+196d3854b9b8 ARM: dts: msm: add FCC stepper parameters for atoll IDP/QRD
+15f81253e693 msm: vidc: add support for dynamic flip
+db63260ee0ab arm64 : dts: update i2s gpio functions for qcs405
+99636dba9e6f ARM: dts: msm: update clock entries to support cphy on atoll
+707d3cc08ab8 erial: msm_geni_serial: Do not start sequencer during port open
+a6b667655022 power: qpnp-qg: Add termination-current based SOC scaling (TCSS)
+af9d6f69bc56 mhi: core: initialize variable to default value
+1f458e769d50 msm: camera: Add mutex protection while dumping registers
+9b1538acc960 drm/msm/sde: add plane check in continuous splash case
+312bd7a12bb9 defconfig: msm: Disable config to append dtb image for atoll
+5b63f08263c0 ARM: dts: msm: Fix regulator properties for lpass on Atoll
+951ee125b508 dfc: Support QoS rebind
+972aab64da55 net: stmmac: Add function to read pinctrl names
+3241b53caf3f clk: qcom: gcc: Update pcie aux clks to 19.2Mhz for all corners
+f2ce3494457a msm: camera: reqmgr: reset the slot on buf_done
+9b11f7dabeda msm: camera: isp: Handle Delayed Epoch scenario in Dual IFE
+1b74ae71f3bf drm/msm: use AMC mode for video mode panel for kona family
+ff6cf9dcd732 devfreq: add use_ab tunnable
+8226e79df12d defconfig: Enanle cpufreq_times config to log cpu freq stats
+abdfeab466b7 drivers: thermal: Use correct last temperature during trip violation check
+71b82cb34065 net: qualcomm: rmnet: Improve header-only packet check
+d3f951dcb6f5 msm: mhi_dev: Update release function in MHI
+675bd7c917cd msm: mhi_dev: Wake up the client on channel disconnect
+5d86ac474354 power: smb1390: keep slave 1390 disable for HVDCP3 adapters
+20fee4a826f0 power: smb5: Add QC 3.0 support for dual charging with charge-pump
+b331014e22a8 power: battery/smb-lib: read FCC stepper parameters via device tree
+e86e6c9187e5 drm/msm/dp: add display-type support in dp
+a8c81ea5ca3c power: battery: Change FCC stepper period to 100ms for PM8150B
+916a5f56c2c2 msm: camera: ife: calculate boot timestamp at csid SOF
+7aa5f4d05690 msm: ipa: eth: Register interface properties when offload is started
+36ac528643f2 defconfig: sm8150: Enable rmnet_ctl debug
+5b2c3a9a2deb net: qrtr: mhi_dev: Only post valid data
+8d635a69daa8 rmnet_ctl: Add IPC logging and optimizations
+1159e55e5d77 pinctrl: qcs405: update gpio, function and group binding for i2s_1
+f239fd7654ab irqchip: gic-v3: support to get pending irqs and highprio irq
+3ab24fb80354 power: supply: smb5-lib: use spinlock to protect pr_lock_in_progress
+e5e7eee4f512 msm:ipa: stop UL IPA TX channel at the end of the probe
+1501ba751d6f serial: msm_geni_serial: Fix UART hang
+cb305f67be8d serial: msm_geni_serial: Remove interrupt storm
+5d3bdcfa38ef serial: msm_geni_serial: Fix wrap around of TX buffer
+7d1f358c8597 serial: msm_geni_serial: Fix softlock
+9f253cd119b3 ARM: dts: msm: Enable host mode interrupt moderation for SDXPRAIRIE
+fabc86768f38 diag: Fix UPD related macro values
+a62dfa7d8764 pinctrl: qcs405: update gpio, function and group binding
+39a6e8d26d38 fbdev: msm: Avoid UAF in mdss_dsi_cmd_write
+ef4b520a5119 ARM: dts: msm: Add sdxprairie-bluetooth.dtsi for SDXPRAIRIE
+c8f31b8caaf4 ARM: dts: msm: Correct the GPIO numbers
+8bca26f846a9 msm: npu: Use different functions for register node
+0f467ecd7b5d msm: npu: Avoid to access NPU registers when power is off
+9ffe8b506fbd msm: venc: update min input buffer count for HEIC
+e1b347462c12 ARM: dts: msm: Enable mute button for iot qcs403
+d7c601acd24c msm: camera: ppi: Change PPI reset sequence
+a436b4fc6fa5 msm: camera: reqmgr: reset the slot on buf_done
+74d55c623de0 msm: ipa: eth: Support for deleting default filter rules
+f6c026ddcc7c dtsi: fix the ab/ib values for IPA votes
+c9ea178df850 msm: ipa: eth: Remove partial headers during deinit
+cd1e76ff2dbe msm: ADSPRPC: Free PD memory in case of failures during PD creation
+4f0b86507357 msm: ipa: Add dummy API to check if NAPI LAN rx is enabled
+308a25b52e8d power: smb5-lib: unvote SW_ICL_MAX_VOTER for USB_ICL in SRC to SNK swap
+0741d2dd87f7 power: supply: smb5-lib: Disable type-C IRQs when locking power role
+528678d60be3 msm: camera: isp: Do not enable the ppi hw twice
+206329f8200a msm: vidc: configure bus frequency using update_devfreq
+b8c3a040cc94 power: battery: smb1390-charger-psy: Handle CP(s) disable conditions
+2ab41b8d17c7 drm/msm/dsi-staging: Add C-PHY support for phy ver 3.0
+5a737011ac5d clk: qcom: mdss: Add additional dividers for 10nm pll CPHY support
+25d716b2765d msm: camera: isp: Disable the PPI hw during PPI overflow case
+6b9e983f7a03 ARM: dts: msm: Update qcedev smmu sid setting on atoll
+1f6393b3447a ARM: dts: msm: Disable SMMU S1 for USB on sdxprairie PCIe EP
+5af9bc2ed854 msm:ipa: change error prints to debug prints
+f1011f2db973 msm: ipa3: add modem BW voting change support
+2b1efc824efc msm: npu: Change unmap buffer logging to debug option
+55b478aa8a7a pinctrl: qcom: Use irq_create_mapping for direct connected GPIOs
+3c20c79fba3f pinctrl: sdxprairie: Enable GPIO 53 to use PDC muxes
+18f2819728be msm: ep_pcie: Update PCIe WAKE# GPIO behaviour
+c8f6ff25b836 drm/msm/dp: check drm driver status in configure_cb
+471dced0daf8 drm/msm/shp: add shared plane support
+2d2b0b196b70 sched: Improve the scheduler
+1545c1251a51 sched/fair: Improve the scheduler
+c23dff711695 sched/fair: Improve the scheduler
+be6ad458cc5a coresight: csr: update programming sequence of enabling etr to bam
+ec623a2d159c cnss2: Expose PCIe window register lock related APIs
+3d6f4dac6323 ARM: dts: msm: Correct the VA SWR_ADC routings for atoll target
+933c31fe9394 sched: use the CPU true capacity while sorting the min/mid/max CPUs
+e9d1d9087939 msm: ipa : Fix KW array index issue on dbg_buff
+4e8ee5faf6a7 msm: ipa3: Ratelimit the error logs for pkts with invalid status
+a6117089b2e8 msm: adsprpc: allocate local copy of remote args from heap
+d3c5e50da7cd drivers: thermal: Notify only thermal zones whose trips are violated
+ed091d1a0711 crypto: msm: Update qce_close to make bandwidth request
+ff20ff67f35d defconfig: qcs403: change CMA alignment to 4
+0ff27d68ccf3 msm: camera: icp: dump page fault in ready state
+566c4b3e1b97 cnss2: add delay for SSR shutdown
+198aebfc6f44 msm: npu: Unvote bandwidth after turning off GDSC
+cc0f0e32ea4e ARM: dts: msm: Add npu mailbox controller for atoll
+50f0f0482762 serial: msm_geni_serial: Disable Flow only for HSUART usecase
+36baaa63df42 ARM: dts: msm: Update skin thermal zone mitigation for ATOLL
+647a48459908 ARM: dts: msm: Update regulator configuration for atoll
+c2df3afe169b ARM: dts: msm: Update HS core clk rate for QCS405 USB3
+12f408740d61 msm: camera: isp: Move CSID error propagation workq create code
+ceb252e1718e diag: Check buffer flush status before processing
+61a6bf2e4509 msm: ipa: Add graceful handling to skip partial packets
+dd39853d6676 ARM: dts: msm: Add support for sdx ipc driver for LE-CPE
+b707311b879b icnss: Add change to vote chain1 regulator
+288d82e590ce msm: camera:icp: Fix deadlock during ICP pagefault handling
+0452c2780a6c msm: kgsl: Get gx status on demand instead through arguments
+62ad18b8b64e usb: dwc3: ep0: Fail enqueue() when racing with vbus_sess disconnect
+0cdcb41fe7f7 scsi: ufs: While completing the request ensure ice is not holding it
+007c368458ac mhi: dev: uci: Handle TIOCMSET ioctl properly
+a6cbeee33259 ARM: dts: msm: set legacy suspend mode for some MHI devices
+c924cfcdac9f mhi: cntrl: qcom: distinguish between legacy and autonomous suspend modes
+09643004a423 msm: camera: isp: Reset sof counter before enable the CSID path
+be3171275ef4 disp: msm: dsi: add check before buffer copy
+c2aade59312b clk: qcom: npucc: Disable CRC for NPU_HM_CAL clock
+e3d978c6dddf defconfig: atoll: enable smmu debug configs
+215124f735ba mhi: dev: uci: add support for POLLPRI signal for line state changes
+031fec88b4eb mhi: core: notify clients whenever device flow control status changes
+6357bb6365f8 msm: IPA: mhi_proxy: correct the mhi vote for both bus and device
+3070fd1b82a7 net: stmmac: Fix phy interrupt mismanagement on netdev_close
+685f8e1dfbc5 drm/msm/dp: do a force dp_clean while dp disconnect
+b7add0ad001c ARM: dts: msm: update clock entries to support cphy
+a2ae443271b5 drm/msm/dsi-staging: update PHY configuration to support cphy
+736b391d5247 clk: qcom: mdss: add additional dividers for CPHY support
+d8a8385c17ae msm: clk: qcom: Correct TRACE_INCLUDE_PATH
+056dc0947157 drm/msm/shd: Avoids printing uninitialized variable in log
+26c9fcc0299f thermal: adc_tm: Update ADC_TM channel configuration API
+6caba9558a94 msm: kgsl: Wait for pending irqs completion in gmu suspend
+85079db90ace net: qrtr: Boot kpi for qmi readiness
+567cc3c098a0 msm: kgsl: Correctly identify page faulting process
+9a532d61c7f6 msm: camera: isp: Disable tasklet once
+5cd647d09c67 ARM: dts: msm: Change 2nd radio TSF gpio to 53 for QCS405
+9e3d7f37adfc msm: ipa: Fix not sending QMI sync indication
+a102b4efdd50 msm: ipa: Fix not to update state during pipe reset
+c623c8502550 ARM: dts: msm: Modify the SWR slaves addresses to 6byte
+52d0a2ede3a1 drm/msm/shd: fix missing return value
+ed62b6d651b3 msm: ipa: Retry gsi channel stop for producer channels
+fc7327fe8f93 msm: ipa: Disable csum offload and status for ODL pipe
+0477c9625fb1 msm:ipa: stop the UL channels  after probe
+9970fd58a402 msm: ipa3: add support for WAN pipes in MHI mode
+c970a27d2d39 msm: kgsl: Check user generated timestamp before queuing drawobjs
+f6843140f7d1 serial: msm_geni_serial: Disable Flow before stopping Rx
+6eabb6087858 ARM: dts: msm: update modem sensors and mitigation devices for sdxprairie
+68e01c557cb9 ARM: dts: msm: Set sdc2_wlan_on sdc2_wlan_off in main dtsi for QCS405
+30c422551b60 defconfig: qcs405: Disable CONFIG_NTAG_NQ since gpio 53 is used for TSF
+c41be5af9f92 usb: dwc3: Drive a pulse on DP on CDP detection
+688b52889811 arm64: enable CONFIG_UNMAP_KERNEL_AT_EL0
+66236fa7befb ARM: dts: msm: correct BT_EN pin drive voltage for SDXPRAIRIE
+90b3e25d4f17 diag: Add diag support for NPU
+598ee0333b0e msm: camera: isp: Mask unused rdi interrupts
+6de3dcdb1b60 drivers: thermal: qmi_cdev: update the cooling devices
+2df10c7a2048 mhi: dev: uci: use space in transfer buffer to store metadata
+8fbaadf6bfaa msm: npu: Add support to get/set property
+38603f674344 defconfig: Enable sdx external ipc driver for sdxprairie
+78f5e95dbbdf ARM: dts: qcom: Add device tree entry for sdx ipc driver
+139b4674ef47 drivers: soc: Add sdx ipc driver to communicate with external AP
+7b579a331284 drm:msm:dsi: avoid seamless request for cwb transitions
+441637dd185e ARM: dts: add sku handling for atoll
+41d88ec3614b msm: vidc: update fuse map for atoll
+08a9956b10d1 iommu: dma-mapping-fast: fix iova alloc wrap
+5ff9f06be2b5 msm: adsprpc: remove PM vote counter in fastrpc driver
+4ebb5dec3722 msm: adsprpc: do pm stay awake vote in rpmsg callback
+a4a6a33bd6f6 msm: adsprpc: do not vote with PM when CPU is going into suspend
+2963612715cf msm: adsprpc: vote for CPU to stay awake during RPC call
+d6d2c7d1d1af iommu/arm-smmu: fix stale fault reporting in ecats operation
+bffc6cf1761b usb: dwc3: Use an ordered workqueue for sm_work
+d42dc57c0a84 esoc: Wait for modem status to go low in crash shutdown
+fc38b8e4f1bd msm: ipa: Fix setting disconnect in progress flag
+73c94ea19fee msm:ipa: Race condition observed during client disconnect
+5a1542265583 msm: ice: check for crypto engine state before processing request
+24f65a2d7049 tty: Fix use-after-free of echo_delayed_work member from tty_struct
+dedd28042125 net: stmmac: Add support for smmu enablement
+ae14ff330ece net: stmmac: Add debugfs entries
+1b6f6cfd40bd msm: kgsl: Add gpu_frequency tracepoint to power trace system
+627710dfa866 net: stmmac: SDx55: add pps signal and interrupts support
+dcd6b0766877 net: stmmac: Add support for PHY interrupts
+51c035ff4731 ARM: dts: msm: correct RF0 and CH0 voltage for BT in atoll platform
+81317be00a6f msm: mhi_dev: Update sequence when ipa_mhi_destroy is issued
+9f07c4464d25 msm: mhi_dev: Fix invalid client access
+4d0d56bd2249 clk: qcom: Reconfigure Fabia PLL during set_rate
+a22ed54d199e msm: camera: isp: CSID error propagation
+1eee28ebef81 drm/msm/sde: modify check for active datapaths
+f80c65ccbf58 usb: gadget: Fix remote wakeup failure in Superspeed Plus
+8857be25cba1 spi: qcom-geni-se:  Add SSR support for SSC QUPs
+f8b3e995fb2d mink: Race condition for local object processing
+6d9a0cdac378 mink: reset server id
+620186724fef mink: fix memory object id overflow
+abf9899dc351 dcc_v2: Don't set the default value to sram when dcc is enabled
+97585db1eb5d ARM: dts: msm: Update to memory map V8 for sdxprairie
+5a2e30834f1d msm/sde/rotator: disable rotator clock during pm suspend
+fdb80286ecd7 msm: mhi_dev: Update MBIM channel attribute
+d169ad83ec35 mhi: dev: netdev: add debugfs hook to disable SKB chaining
+7ca57230b030 msm: IPA: add the missing iounmap handle
+818c4e15972a power: smb1390: Don't allow negative CP_ILIM override votes
+0b54aaebfd27 power: smb1390: Override ILIM in taper only for CC mode
+7f777511aa85 msm: camera: isp: Create debugfs for STATs DMI and cfg dump
+afa6e60eb34f msm: kgsl: Remove unused registers from the snapshot dump
+19870029bc96 diag: Donot queue read in error case during mhi diag open
+3012303b8ea1 ARM: dts: msm: correct SMPS3 regulator voltage to 0.95V
+9f6005fe2635 ARM: dts: msm: Increase GPU snapshot size for sdmmagpie
+368932a3315f power: battery: fix FCC stepper calculation
+888d02232eb5 ppp: pppopns: Always linearize in the input path
+ffe6248888c5 net: stmmac: Use mutex instead of spinlock
+1767b3e79ec4 net: stmmac: fix PTP packet configuration
+c7360ca5848d net: stmmac: SDx55 EMAC HW configuration changes
+b3d73968b8a5 phy: ufs: Update phy settings for atoll
+4853cd4f6c0e ARM: dts: msm: Add svsl1 level for CSID clock in atoll
+b1979ad1cb5c serial: msm_geni_serial: Avoid suspend post port close
+98d16b0de8bf ARM: dts: msm: Update Superspeed PHY sequence for SDXPRAIRIE
+79aefefc5180 defconfig: arm64: msm: Enable MSM_DEBUG_LAR_UNLOCK for QCS405 perf
+63ea672c4eb5 drivers: net: rmnet: Free port after netdev unreg
+b0a0290e8b00 msm: pcie_ep: Support inband wake for D3_HOT
+36f1994c07bd ARM: dts: msm: Add support for CPE 1.1 on sdxprairie
+864a43f1b9d9 Revert "msm: npu: Limit one client to load network"
+0e0ac1538a94 PM / devfreq: gpubw_mon: Add null check for governor private data
+9f5b927b8eed msm: camera: isp: Skip reapply of DMI config on bubble recovery
+0e4c2597c9cf diag: Validate msg source length to prevent out of bound access
+a35cc6654a2c ARM: dts: update usb HS tune parameter on atoll
+6e4527c20240 usb: dwc3: ep0: Fail enqueue() when racing with pullup_disable()
+832cf8e21c91 byte-cntr: Support to enable byte-cntr after etr is enabled
+1daf635651bd net: aquantia: Fail probe if IOMMU is not attached
+1451982698cd power: smb1390: Turn off due to high SOC threshold only at start
+9f0d7e63cbbd coresight: stm: Fix deprecated function issue
+d8f6322e6ea5 ARM: dts: msm: Add tcsr register region for npu
+d1eeb71cd02f net: qualcomm: rmnet: Fix potential UAF when unregistering
+32333705bd96 msm: mhi_dev: Update uevents for MHI UCI channels
+75c1104ba65f drm/msm/sde: Add crtc num preference option in dtsi
+45e43d3ac810 msm: camera: LDAR Dump NRT devices information
+4b6306bc308d ARM: dts: msm: add dt nodes for sde limits for atoll target
+f7ef1482827f ARM: dts: msm: Add support for NX3DV221 IC on atoll QRD
+ea961a1319c8 ARM: dts: msm: Enable bus scaling for CDSP PIL on Atoll
+0b3c6a217d09 drm/msm/sde: add support to handle mdp limits property
+1fa3bacd3a04 power: qpnp-fg-gen4: disable wakeable irqs for debug board
+3ab93ee82384 dt-bindings: add documentation for sde-limit
+25bb5f18a9ae ARM: dts: msm: Disable ethernet interface for mhi swip for sdxprairie
+28e9976cdd30 ARM: dts: msm: update magpie BW limits for display
+479ea5ccc7f7 drm:msm:sde: update avr mode config during commit prepare
+3f9eafa5d73d ARM: dts: msm: Disable SMMU S1 for USB on sdxprairie PCIe EP
+65d565148beb drm:msm:sde add one-shot qsync mode support
+6d4a281cbc46 drm:msm:sde allow qsync support along with VRR
+9865fb959a4e msm: ipa3: Fix to check DMA address valid or not before unmap
+1897dc8dfa3e msm-vidc: add image encode capabilities for atoll
+48d490b1f330 ARM: dts: msm: Add minidump id for Cdsp on atoll
+95b18620608c ARM: dts: msm: Add minidump id for Lpass on atoll
+ab8c338c7610 dt-bindings: Add bindings for minidump ELF format
+779256515374 soc: qcom: pil: Add property to change minidump ELF format
+df2c2683ebae ARM: dts: msm: smb1390: Enable dual smb1390 for atoll QRD
+d44026e2ec30 ARM: dts: msm: Disable QRTR mhi dev node for sdxprairie
+f31e386f4d97 mhi: core: add sysfs hook to modify IPC log levels
+b38f1b054571 ARM: dts: msm: Add MHI and PCIe device for sdxprairie v2
+1ea8feffb26b ARM: dts: msm: Update thermal zone mitigations for ATOLL
+adf9f074bf9b drm: msm: dp: fix locking in hotplug processing
+96601b1e8da7 ARM: Fix RTIC MP DTS failure for 32-bit target
+f522e12bccac drm/msm/dp: Fix DP_MST_DEBUG formatting error
+347c4c0eeb9f msm: ipa3: Fix to not remove endpoint delay if stop channel fails
+24c6e9965fb3 msm: mhi_dev: Update MHI MMIO initialization for BHI_INTVEC
+09be2b587328 msm: IPA: uC debug stats for loadable modules
+cf56550bc2d0 USB: f_accessory: Check dev pointer before decoding ctrl request
+af9441691304 usb: gsi: Fix usage of uninitialized variable
+3b2c0006958d ARM: dts: msm: Update pclk dt entry for atoll target
+cde2120710d2 ARM: dts: msm: Add support for various platforms on atollp
+c016396009e6 clk: qcom: Update CRC register offsets for Atoll
+374e3d89b026 drm/msm/sde : Add support for LUT DMA 1.2
+bdb3ae37c4d1 ARM: dts: msm: add xo_clk for DSI display
+e2307d106bcb usb: dwc3: Remove extra format specifier
+f50d764c443e usb: dwc3: Increase the TxFIFO resize factor
+5278a9fee352 usb: mtp: Improve throughput during multiple file transfer
+0695472cb56e soc: qcom: Add support for atollp into socinfo driver
+93672757032a ARM: dts: msm: Add memshare for atoll
+1382b19fa0d4 msm: camera: isp: LDAR Dump ISP information
+22bde65540c6 ARM: dts: msm: Update SMPS2 and SMPS3 regulator min voltages for sdxpairie
+5ebda72571be msm: ipa: Concurrency support in offload sub-system
+16bad5e40e27 ARM: dts: msm: Add support for PCIE-EP V2 on sdxprairie
+592c7299baf1 mm/vmalloc.c: don't dereference possible NULL pointer in __vunmap()
+35e1b941ad69 drm/msm/dp: support probe defer for the usbpd driver
+86cb8365ea79 ARM: dts: msm: Disable npudsp_npu_ddr_bw for atoll
+9a68558b2444 ARM: dts: msm: Update PIL region for sm6150
+7937149a59bc ARM: dts: msm: Update PIL region for sdmmagpie
+639549cf48b8 ARM: dts: msm: Disable tpdm_modem_1 for atoll
+0e4bb64c165b f2fs: avoid infinite GC loop due to stale atomic files
+4a7e8947d71f power: smb5 : Remove HOST mode notification on role switch failure handler
+3ae9d9130db4 mhi: dev: netdev: show skb chaining status for debug purposes
+b2a542b3c65c Arm: dts: Add energy cost data for new available frequency
+4cbc02701122 net: qualcomm: rmnet: Only set partial csum on coalesced descriptors
+e45f1b868ee6 drm/msm/shd: add cont_splash support for shared display
+63d06547b900 msm: ipa3: SRAM NAT, DDR NAT, back-and-forth NAT
+761252184344 msm: vidc: Align enum in v4l2 and openmax
+686da8e40a9b ARM: dts: msm: Remove max FCC restriction for atoll
+2ba0a141eb79 power: smb5: Add DT property to disable max FCC restriction
+4a0981ec1fb9 dt-bindings: Add DT property to disable max FCC restriction
+b14e03c809d8 msm_camera:isp: use buf_err during empty buffer
+d9063e070e92 input: touchscreen: synaptics_tcm: Enable pinctrl for touch driver
+b61d8ab2d858 ARM: dts: msm: vote S3E to avoid XO shutdown failure
+849f4162d996 cnss2: Expose QMI send related APIs
+805dc06d9ce7 ARM: dts: msm: fix bluetooth functionality failure after XO shutdown
+0bc031dbe6a4 devfreq: Allow bw_hwmon resume with zero resume freq
+813de642b3b6 usb: dwc3: Check USB LPM status before accessing registers
+8cd39093b051 ARM: dts: msm: Add svsl1 level for CSID clock in atoll
+faf710268fd9 power: smb1390: Fix formatting error
+62ee912bcc60 Arm: dts: msm: Enable npu bwmon node for Atoll
+7ce55567771c defconfig: Enable config for pasr on atoll
+864da6142cfc ARM: dts: msm: Add GPU speedbin support for atoll
+38b0624760ed mhi: cntrl: return EBUSY from runtime pm ops in error scenarios
+fe3a5d714109 ARM: dts: msm: Add memory map for sdxprairie CPE
+5cd537eacc53 ARM: dts: msm: Add MHI and PCIe configuration
+44345a4dbbbc ARM: dts: msm: Update pm8150b and usb nodes configuration for sdxprairie
+971087469934 drm/msm/dsi-staging: add XO clock support for DSI display
+b5c58acf2e27 ARM: dts: msm: Disable thermal registration from CDSPRM for ATOLL
+3c68ee86df51 uapi: msm: Add support for amrwbplus codec
+2c8e11c27b74 ARM: dts: msm: Update audio routing for atoll target
+33a6b05386a2 mm, page_owner: record time and pid
+2c09313370f6 msm: adsprpc: Invalidate remote output buffers
+c70e93b786c6 clk: qcom: Add BRANCH_VOTED for gcc_npu_axi_clk for ATOLL
+b5855ea96f2a defconfig: qcs405: Enable cnss_crypto for Tufello
+7ceec232d4e5 ARM: dts: msm: Use gpio116 as wlan_en for 2nd radio on QCS405
+929fc1977b1b ARM: dts: msm: Revert gpio21 related change for QCS405
+137aaadde534 msm: kgsl: Update hardware clock gating settings for A612
+f92471d12fde arm: RTIC kernel integration to generate MP DTS
+41422aca648f kernel/build: Append RTIC dtb in dtb image for boot header v2
+3e9b7e7e41b6 msm: kgsl: Disable deprecated ioctls
+f0c8056aa06a ARM: dts: msm: Add bolero codec node in wsa
+614506e29ac6 clk: qcom: alpha-pll: Check for PLL run condition for Fabia PLL
+878c621776b8 clk: qcom: rcg2: handle non-cxo frequency for enable_safe_config
+73dad537e702 power: smb5-lib: unify wdog timer for SW step-charging
+287c6f41ee21 ARM: dts: msm: Enable L3 scaling for CDSP
+5fd0d147e308 ARM: dts: msm: Add MHI and PCIe configuration
+b09433c7e7d7 ARM: dts: msm: add mem-offline support for atoll
+413ce055d375 ARM: dts: msm: Update pm8150b and usb nodes configuration for sdxprairie
+f4952b896a36 power: fg-alg: add function to qualify capacity learning start
+925a36b0962d iommu: arm-smmu: reset CBn FSR while device reset
+5a062379c251 drivers: iommu: Don't acquire stream_map_mutex in testbus dump path
+16b247f4d658 msm: npu: Update NPU bandwidth while subsystem shuts down NPUSS
+422e9b8e501e power: fg-alg: Enable min/max SOC checks for weighted-CL
+60221072c85d power: fg-alg: Use batt_soc centi-percentage for CL calculations
+03cac88e41cb sdxprairie: defconfig: Add DLKM support for crypto modules
+b025eeb41792 crypto: msm: Add DLKM support for crypto modules
+b4c566bf0f76 ARM: dts: msm: add support for 2560x1600 resolution
+f6f1d4e8d501 drivers:soc:llcc_perfmon: Support for multiple memory channels
+c2b723dea953 ARM: dts: msm: Add CDSP L3 node and Cx ipeak mitigation for ATOLL
+bfb3dcd9396c input: touchscreen: synaptics_tcm: Update watchdog delay to 50s
+f98eb13a25ef power: battery: Remove wakelock for parallel
+dae248d618e2 scsi: ufs: fix ufshcd command trace command ID
+ed379cc5aa12 ARM: dts: msm: Correct the name of coresight etm for atoll
+44b1f0056373 ARM: dts: msm: Add registers to dcc for atoll
+d4c08fe4c81d msm:ipa: unvote PCIe clock only if it was voted before
+3f7f2add45cf net: qrtr: Send HELLO message on endpoint register
+6116e7517f90 mhi: core: auto-start uplink channel before client driver probe
+d07a0727159d msm: ipa: add additional checks to prevent use-after free errors
+0d4b87590609 msm: mhi_dev: Enable channels after host issues a connect
+5809a8f99e84 diag: Move userspace mask process to mask handlers
+6b3dd4e13ec0 mhi: core: trigger system resume when aborting suspend
+a2de0ad84683 power: smb5-lib: Fix CONT_AICL_THRESHOLD configuration
+a8bde7506a6e power: smb5: update USBIN allowance only for USBPD charger
+bbca0ebf30d3 mtd: devices: Add support to parse more partitions
+b1674a80c4c7 arm: mm: add check for coherency in arm_iommu_free_attrs
+616bb605e43a ARM: dts: msm: Add support for LE-CPE V2 on sdxprairie
+1ee8682e1f44 ARM: dts: msm: Add support for LE-CPE on sdxprairie
+48b8aab926bf drm/msm/sde: modify stage for dim layer during atomic set
+d44fa305e0a6 drm/msm/sde: modify stage for dim layer during atomic set
+14e3ce591a69 power: smb1355: enable device suspend
+d8489bdc840c msm: camera: isp: schedule tasklet with priority
+2abd058397af ARM: dts: msm: Update dfps data memory for atoll
+ce8fa3ff31bd ARM: dts: Reduce qseecom heap sizes on sdxprairie
+72d4bdf7c94d clk: qcom: clk-alpha: Reconfigure Fabia PLL during enable
+3a0256b37501 ARM: dts: msm: Update PCIe EP PHY settings for sdxprairie-v2
+2ce7a4ff5784 msm: ep_pcie: Update L1 programming sequence
+dbf6596871c3 Arm: dts: msm: Add llcc_pmu node for Atoll
+a511501ddf92 msm: ipa: Enble USB DPL end point
+958c54ecc245 defconfig: Enable NPU_V2 for atoll
+2024bcc8b38c msm/sde: prevent double register of input handler
+f640757c6ce8 dt-bindings: usb: Remove vconn_uses_external_source from qpnp-pdphy
+f2664aeef4b9 usb: pd: Remove vconn_is_external flag
+445430785ef3 atlantic forwarding driver v1.0.25
+79811a7e1ba5 atlantic-forwarding driver v1.0.24
+6ad9436ab5b6 drm: msm: dp: correct the resolution width check in get_mode_info
+2f05df2299a0 ARM: dts: msm: reserve memory for display ramdump for atoll
+f0a033608f6c ARM: dts: msm: update splash memory node for atoll
+0ee56b9c6bf2 icnss: Correct condition to check invalid address range
+b8b7b11e4f55 drm: msm: dp: Update correct count for mst encoder count
+2dbfa582a676 ARM: dts: msm: Add mst encoder property for atoll target
+6e47b0cc872f ARM: dts: msm: fix event rings for RMNET_CTL channels
+081185105044 regulator: qpnp-amoled: Skip changing IBB/AB configurations for AOD
+8599328aa823 dt-bindings: qpnp-amoled: Skip changing IBB/AB configurations for AOD
+f350c8088f7e net: qualcomm: rmnet: treat IPv4 UDP zero checksum as valid
+ae761053a0c9 net: qualcomm: rmnet: use stronger locking primitive for descriptor pool
+6b7dcbf1485c soc: qcom: qmi_rmnet: Check for allocation failures
+13b840bb5748 msm: kgsl: Fix NULL pointer dereference in gmu_kmem_close()
+c2f5309b87ae clk: qcom: mdss: remove recalculation of vco rate
+cbfd449ef5b2 clk: qcom: mdss: remove recalculation of vco rate
+b037fc36c6ea platform: qpnp-revid: Add REVID support for PM8008, SMB1355 and SMB1390
+00f572a9d637 msm: vidc: Check image encode capabilities
+541c8ed996da ARM: dts: msm: Unreserve CMA buffer for WLAN
+d370c669b646 net: Fix null de-reference of device refcount
+a49b738e49f5 net: qualcomm: rmnet: Fix list handling of the page pool
+a7812481eaa5 power: qpnp-qg: Add support for multi profile loading
+f4b6b819dbb9 msm: msm_bus: add checks for memory allocation
+31740008d34a drm/msm/dsi-staging: add P/N swap support for DSI PHY
+de4019a52858 atlantic-forwarding driver v1.0.23
+00a9d7528d63 msm: npu: Add NPU driver V2 to support atoll
+7d32f737792c net: aquantia: Forward device events to IPA offload sub-system
+fd70c45694cf net: aquantia: Remove usage of atl_fwd.private field
+75aee514eba2 msm: ipa: Add support in offload sub-system to handle netdevice SSR
+16a127c72331 mm: fix the race between swapin_readahead and SWP_SYNCHRONOUS_IO path
+5a20101a4271 msm: ais: eeprom: Release the mutex even though got error
+cbe25565625a mtd: Collect bad block count for ecc stats lazily
+1b49e1aa5235 clk: qcom: clk-alpha: Reconfigure Alpha PLL during enable
+63e0f203ca7f  clk: qcom: clk-alpha: Update round_rate to return minimal rate
+e9627c69aaf9 clk: qcom: npucc: Add pll config for NPU Q6 PLL
+855e113bd3e5 power: qpnp-fg-gen4: add support for SOH based profile loading
+1f139b5ab306 ARM: dts: msm: Add npubw and fix ipc irq for atoll
+08173d1ffb1a msm: camera: isp: Fix Page fault dump for first request
+72074a556379 ARM: dts: msm: add rm69299 cmd mode panel support for QRD atoll
+7e17b64f9b2f msm: ipa3: Change IPA log type
+15025bdd6a56 arm: dts: msm: Add triple camera sensor nodes for atoll
+bd2a94cf2906 cnss: add cnss_crypto for qcacld-2.0
+827719d2cc54 diag: dci: Prevent using uninitialized variables
+331a4507e7e2 msm: kgsl: Make the "scratch" global buffer use a random GPU address
+b4face445084 msm: kgsl: Use a bitmap allocator for global addressing
+f3e2176decf2 msm: kgsl: Execute user profiling commands in an IB
+186d97bbce47 msm: kgsl: Verify the offset of the profiling buffer
+aaf80542979c power: smb5: Avoid potential votable deadlock issue
+ae38f840ceeb power: battery: add support for override votes in FCC stepper
+8453c68791c6 pmic-voter: add support to report override votes
+12deb67242c9 power: smb1390/battery: add support for CP input/output topologies
+4bf983205b7f ARM: dts: msm: Increase the dump size of pmic for atoll
+48bf16f47291 defconfig: sdxprairie: Remove CONFIG_VT
+13c552d2cf7e drm/msm/sde : initialize rsc_state and wait_refcount
+089465a354aa ARM: dts: msm: add bus scale values for bandwidth scaling
+42fd42e8ee01 mhi: core: remove support for bandwidth request from mhi_cb
+b1f16a00d701 mhi: cntrl: bus scale adjustments based on requested GEN speeds
+e1e12661eb43 mhi: cntrl: qcom: device requested bandwidth scaling support
+456422f2ce32 diag: Do not write buffer to usb when already flushed
+38ae92218254 power: fg-alg: add support for SOH profile loading
+df60a420bb51 of_batterydata: Add function declarations
+8f475356a567 of_batterydata: add functions to support SOH based profile loading
+b3f961b8e7c8 ARM: dts: msm: Correct control tcs count for atoll
+33b0981f9a24 msm:camera_v2:isp:Increasing stats ub size
+697c302789b8 ARM: dts: msm: add remote debugger support on atoll
+8c7944e16d74 ARM: dts: msm: Correct node names of reserved-memory
+91b4609d6594 usb: gsi: Add debugfs support for remote wakeup on each interface
+4c7d15b75637 power: qpnp-fg-gen4/qg: Add TTF_VALID param for valid TTF/TTE reporting
+39678c35b294 msm: ipa: typo in ioctl ipa3_ioctl_mdfy_flt_rule_v2 function
+024e428b24b4 msm: ipa: add the version check for FnR stats ioctl
+697049be4bcb drm/msm/sde: Fix improper %p usage in sde rotator module
+996055a95182 msm: vidc: Cancel the queued work after deleting the timer
+87cc807b97d5 ARM: dts: msm: update step-jeita and step-charging thresholds
+6cc219e64fa8 ARM: dts: msm: Modify debug UART pins configurations for atoll
+c2bde58f9e37 ARM: dts: msm: Add thermal zone config for NPU in ATOLL
+80a788e0bb86 ARM: dts: msm: enable CDSP thermal zone mitigation for ATOLL
+33f337693c54 power: smb5: handle role-switch failure
+0acdfa418cff ARM: dts: msm: Enable dynamic dsi clk switch on atoll
+77a9f307c513 ARM: dts: msm: Enable SSC for DSI PLL on atoll
+3ce4800713de defconfig: msm: Enable QFPROM support on ATOLL
+a173ea6ca1b7 dt-bindings: qpnp-qg: Add property for multi-profile-load
+6742853ac0ae power: qpnp-qg: Update QG parameter reporting for debug_board
+32a16b052b41 disp: msm: dp: remove session lock for power state update
+b6543a1d9b52 disp: msm: dp: force disconnect at simulation mode off
+9ed3b1785517 ARM: dts: msm: Change cd-gpio polarity setting for QRD atoll
+ec675ea150bf ARM: dts: msm: Update energy costs for Atoll
+2db4c310fb9c mhi: core: device requested bandwidth scaling support
+7f010618b17a mhi: core: fix iterating through misc offset for capabilities
+2feed90760f5 mhi: core: add support for priority based event rings
+b088016ff9e6 drivers: thermal: Add support for CDSP cooling devices via qmi cdev
+5d7a318f001c ARM: dts: msm: add demux node for 4.14 devicetree
+8c18a6c6ca21 ARM: dts: msm: enable rscc for atoll target
+9b6d3504fc03 soc: qcom: mem-offline: add support for multiple size pasr segments
+21d5c10a0618 drm/msm/sde: add support to expose base layer staging property
+24168a023f7b defconfig: qcs40x: Enable crypto drivers
+5db59ff1be20 disp: msm: sde: use high bandwidth threshold for crtc check
+149a36dad735 msm: ipa: Fix KW P1 issue
+b8e8545ba1e2 ARM: dts: msm: Select default panel for atoll atp
+e54c3f118b32 ARM: dts: msm: add support for RMNET_CTL channels
+2064e5d143e6 ARM: dts: msm: add support for bandwidth scaling event ring
+4746e4c2e258 defconfig: Enable rmnet_ctl driver
+967d3859ab54 ARM: dts: msm: Update the min voltage of LDO11A for sdmmagpie
+b9b17d82a000 ARM: dts: msm: Add BCL and PMIC die temperature zone mitigation for ATOLL
+841b4cf47160 ARM: dts: msm: Add support for new qcs407 board for I2S grouping
+44f4d694dec6 ARM: dts: msm: Change the pet timeout as per granularity limit
+bc9b018453b0 ARM: dts: msm: Add ipcb tgu for atoll
+9a1719afb4ee smcinvoke: Handle NULL dereference for cb_req
+60557a6fa59d ARM: dts: msm: Disable SW based thermal regulation for atoll
+c6db7dbb13a9 power: smb5: Add DT property to disable SW based thermal-regulation
+bd09efd216f8 dt-bindings: Add DT property to disable SW based thermal-regulation
+26a2c9ee1847 disp: msm: sde: fix cwb, dp and wb tear down sequence
+3d717f122801 disp: msm: sde: fix the race condition with wb output buffers
+785af06cfe70 disp: msm: sde: avoid wb done wait for cwb in wait_for_commit
+b7a0892a8027 fbdev: msm: make EBI2_PANEL to support RGB565 format
+4f7ae20c9ad3 ARM: dts: msm: Add PMIC peripheral configuration for atoll-atp
+b87496b1473b clk: qcom: mdss: Improve logging for 10nm dsi pll
+4fbcf94a35af ARM: dts: msm: Add audio support for ATP variant in atoll
+2052fa480a71 mmc: core: add tunable delay waiting for power to be stable
+0b29e205bd1b ARM: dts: msm: Enable QoS programming for ATOLL
+5f5c44f4d6d5 defconfig: switch to DLKM for sound architecture
+228f25a21ab1 diag: Clear the local masks only during local usb disconnect
+4ccaccd718c3 qseecom: check invalid handle for app loaded query request
+6b2c2b0e6d43 ARM: dts: msm: Add NPU support for atoll
+a9ce89058f0e defconfig: sdxprairie-perf: Disable bluetooth builtin
+0ef1d0b3f3d2 defconfig: sdxprairie: Disable bluetooth builtin
+2e04165c2aa8 ARM: dts: msm: Add touch support for atoll ATP target
+3f9ad6c40ebb ARM: dts: msm: Add display DT node for atoll ATP target
+b38acf69d506 ARM: dts: msm: limit max dp resolution on atoll target
+088440153444 drm: msm: dp: correct the resolution width check in get_mode_info
+b1e565b2e6d9 ARM: dts: msm: Enable ULPS feature on atoll
+f2f3f67d0458 ARM: dts: msm: enable hdcp for atoll target
+796b8f57b892 ARM: dts: msm: enable fingerprint for atoll
+f00c10d8659c drm/msm/sde: consider num DS for mixer width
+d8583712a28c Arm: dts: msm: Update DDR latmon freq for Atoll
+fa67cd3de75d defconfig: msm: Enable QPIC display on sdxprairie
+e525307a7d98 fbdev: msm: Set correct pipe number for QPIC display
+694537928062 fbdev: msm: Remove inlcude file for QPIC display
+a57f51f05d8f ARM: dts: msm: Enable display on sdxprairie CDP
+49f3af37076c SoC: core: default select SND_TIMER based on SND_PCM
+d4803c9ddd80 ARM: dts: msm: increase the maximum allowed blendstages for Trinket
+2fd29733cbff drm/msm/sde: stage layer with zorder 0 as base layer
+bf1e22441898 msm: camera: isp: handling lane config parsing
+7639a0633abe usb: gadget: Add new ipc log buffer to log request and dma
+73b710cb1c96 ARM: dts: msm: Pass eud as extcon device for ATOLL
+7b7365ffdb86 ARM: dts: msm: Update Superspeed PHY sequence for SDXPRAIRIE
+b67047659136 ARM: dts: msm: Update GPU power levels for atoll
+0bf26f65e333 ARM: dts: msm: Update Low SVS bus voting for atoll GPU
+14a09f5ce63e msm: camera: cpas: Add Urgency Low register value
+8cf243a8816b ARM: dts: qcom: Correct max voltage of Regulator L4
+4c467551750c ARM: dts: qcom: Correct max voltage of Regulator L4
+000bc6993bf5 clk: qcom: mdss: Improve logging for 10nm dsi pll
+adc7dd2f43d9 ARM: dts: msm: Add wdi to ipa_pm exception list
+f4f4d5e31908 ARM: dts: msm: Add wlan subsystem id for minidump collection for atoll
+96aea4bca2d9 msm: camera: isp: Adding cpas hw version for SCM call in atoll
+ceed87478028 msm: vidc: Invalidate encoder output buffer cache
+848925ef5687 ARM: dts: msm: Add devicetree node of NFC for atoll ATP platform
+8b2d9d88436d ARM: dts: msm: Add BoB "bypass" mode flag for atoll
+577bc0ebbc98 cnss_prealloc: Differentiate prealloc table by WLAN chip
+9dcd941f36a6 msm: ipa: Fix race condition between timer expiry for wq and pipe teardown
+4910f1a6241b drm/msm/shd: correct base connector state at lastclose
+d5dc334c1db9 ARM: dts: msm: Add display node in wcd937x and aatc variants
+1467a82f74d8 ARM: dts: msm: change max voltage for L4A regulator on atoll target
+742ec71379b3 ARM: dts: msm: Enable the OSM clock controller for ATOLL
+2c1906d09069 ARM: dts: msm: Enable L1/L1ss for Hastings
+3362ea407840 msm: ipa: Fix the double unmap page recycling cleanup on ssr
+3f595091d681 ARM: dts: msm: add support for default topology for visionox panel
+31a813c8dcad msm: camera: ppi: Change PPI reset sequence
+83a7cef11fbd drm: msm: update vsync source for sde rsc
+81a5635be2eb ARM: dts: msm: Update sdhc_2 settings for QCS405
+1f9858092e22 msm: msi: check access to PCIe config and BAR access for MSI/MSI-X
+b510d486c2ad ARM: dts: msm: Update ADC channels for atoll
+0e6daa68ae84 ARM: dts: msm: Add support for AATC variant in atoll target
+7c879c48f2a7 ARM: dts: msm: Update TSENS thermal zone names for ATOLL
+b946848a8ffd Revert "Dm: init: Enable rootfs mount as dm-verity during boot without ramdisk"
+66c64b1fe873 ARM: dts: msm: add support for ESD and DFPS features
+a15610848b00 ARM: dts: msm: add cmd mode panel support
+b7f5946b7688 ARM: dts: msm: add dp dt node for atoll target
+b6e067c17fd7 msm: ipa4: null terminate FST dev name
+1ca23a571451 clk: qcom: Update the PLL settings for Fabia PLLs on ATOLL
+a9961dec1f7e ARM: dts: msm: Enable HW trigger mode for Venus and Camera GDSCs
+c717a488cc52 msm: camera: csiphy: update csiphy data rate settings for sm8150
+57ccea6c811b clk: qcom: Add clock measure support for cnoc, snoc and ipa_2x clks
+5f04100f4d24 power: qpnp-qg: Fix incorrect reporting of SOC
+c64dddfce747 ARM: dts: msm: add PCIe bandwidth scale table for each PCIe on sm8150
+884f03ed4e2b msm: pcie: disable/enable link LPM during bandwidth scaling
+566e685a1423 msm: pcie: support dynamic CX and rate change clock scaling
+390d541acec3 msm: pcie: expand PCIe bandwidth scaling
+54720abd242a msm: pcie: add PCIe bandwidth scale table support
+bad8ab78182c dt-bindings: pcie: add bandwidth scale table
+809cd0336bec msm: pcie: aggregate PCIe rate change clock vote
+54da966142b9 msm: ipa: Fix the missing page recycling cleanup on ssr
+b3d7f1182515 ARM: dts: msm: Add support for META MI2S ports
+a4d2b8421c2a ARM: dts: msm: Add docu for META MI2S ports
+ea4fb9c6aa95 clk: qcom: Add BRANCH_HALT_DELAY for gcc_aggre_ufs_phy_axi_clk for ATOLL
+fcea9eb1de4b ARM: dts: enable continuous splash for atoll target
+0c5592f31669 msm: camera: csiphy: Update csiphy settings for sm8150
+49787d94c522 msm: camera: csiphy: reset phy lane configs on shutdown
+2477da6d8609 ARM: dts: msm: remove qdss offset for trinket
+5050bac00f90 ARM: dts: msm: remove qdss offset for trinket
+10f52b7f0e8e msm: camera: cpas: Enable camnoc interrupts
+18bfc975ea91 msm: ipa4: Fix to update aggregation byte limit for coalescing pipe
+cc473d1bb5f2 diag: Use mutex instead of spinlock for synchronization
+5e337987a6c1 ARM: dts: msm: update wb linewidth for atoll
+36741b7c8748 msm: ipa: Fix accessing coal registers when clock is off
+0f785b3fc29d ARM: dts: msm: Correct the qmi id of modem etm for atoll
+5c20eb43ec57 mhi: dev: netdev: add debug stats to monitor buffers allocated
+f50b8b4406e8 mhi: dev: netdev: use a background task to allocate temporary buffers
+d3a73e3bb9da mhi: dev: netdev: use a single pool of buffer for all devices
+481908c4ccf7 msm: IPA: mhi_proxy: correct the return for mhi unvote on ssr
+69a6ad87629a net: qualcomm: rmnet: Set partial checksum on single segments
+045916d3c0de net: qualcomm: rmnet: Only update headers for coalesced scenarios
+200db0b46232 net: qualcomm: rmnet: Switch page order computation logic
+8f2436ed4964 net: qualcomm: rmnet: Allow configuration of page recycling
+7fdfea225ba5 net: qualcomm: rmnet: Switch uplink aggregation to pages allocations
+4123b955f5fd net: qualcomm: rmnet: Refactor uplink aggregation
+dc8eda88d062 net: qualcomm: rmnet: Allow to reset rmnet private stats
+24ab0fd390b1 msm: ipa3: Cleanup MHIP Dl rules condition fix
+002759b6c2b1 soc: qcom: wda: Safe traversal of PS list
+3c093baa8344 net: qualcomm: rmnet: segment linear skb with correct size
+c0a4b2fbb813 msm: ipa: Page recycling on WAN DL data path
+940b898b2050 dfc: QMAP DFC phase 2
+e3a12f8d8cb8 dfc: QMAP DFC flow control
+f7e5c324ed88 rmnet_ctl: Rmnet control driver
+859f32816d8c ARM: dts: msm: correct voltage values for BT
+5b6025fcda96 ARM: dts: msm: Update gpio configuration of swr gpios for atoll target
+879bcd96bf55 ARM: dts: msm: Add rm69299 video mode panel support for QRD atoll
+2e0176965e2f disp: msm: sde: add check before buffer copy
+a69760e8f695 ARM: dts: msm: Update the LDO6C min voltage for atoll
+5e540baec4a1 ARM: dts: msm: Correct interrupt numbers of GSI for atoll
+db38d119638a atlantic-forwarding driver v1.0.22
+570f88565c49 ARM: dts: qcom: Add cci1 client node for cpas of atoll target
+eb8c6c6c120a clk: qcom: Add support for 504MHz and 380MHz for ATOLL
+2522c6be01d3 ARM: dts: msm: Add sleep counter node for ATOLL
+b0274a3274b8 ARM: dts: msm: Update PHY VDD max voltage level on atoll
+e3b4b8224c5a ARM: dts: msm: Update WLAN configuration for atoll
+ca81bd18cb84 ARM: dts: msm: Add extcon handle for ATOLL QRD
+eeae6d32b486 ARM: dts: msm: Add parent supplies for CX and GX GDSCs for ATOLL
+59e678dad3b9 ARM: dts: msm: Add llcc perfmon device for ATOLL
+43fce3857c6a ARM: dts: msm: Enable UFS, eMMC and SDcard drivers on atoll platform
+4337f8d43baa ARM: dts: qcom: Update SDcard Vcc voltage to 2.96v on atoll
+a76d2dc18f39 drm/msm/shd: add dsi_display base in shd_display
+195b95082051 ARM: dts: msm: Correct the Compute core-dev mapping table for CPUBW
+6ef8309f2a1e ARM: dts: msm: Add Lrme node for atoll
+21ea7cd01076 disp: msm: hdcp: force encryption for HDCP 1.3 compliance
+ae9b6d0551df ARM: dts: msm: Add devicetree node of NFC for atoll
+3c1c01e2f596 ARM: dts: msm: add dtsi changes to support atoll qrd
+ca151ea0931e ARM: dts: msm: Correct QUSB register address on atoll
+86b5a8283ef8 ARM: dts: msm: add smmu capture bus interrupts for trinket
+940c63466b8e iommu: arm-smmu: add capturebus support for smmuv500
+92f4fbc31ca8 msm: camera: reqmgr: return if sync_slot_idx is not found
+76d8ce5a5801 msm: camera_v2: Use proper buffer index
+7964fb9af915 ASoC: Allow switch to DLKM for 32bit targets
+58df8570a5ff msm: ipa: fix race condition between USB connect and modem SSR
+f610a52cfded msm: ipa: enable HOLB drop timeout on MHIP producer channels
+7b7097c279f6 msm: ipa: ADPL over ODL support on MHI Prime channels
+eca8db696c8f ARM: dts: msm: update ubwc static ctrl for ubwc2.0
+04824f154349 usb: dwc3: gadget: Prevent core from processing stale TRBs
+f8dccd251e15 ARM: dts: msm: Fix bluetooth enable failure for SDXPRAIRIE
+0229558c0fe8 msm: kgsl: Avoid AOP message on unsupported A640 GPUs
+0e045af6cc4e dt-bindings: qpnp-qg: Add documentation for FVSS
+cbd93274f259 power: qpnp-qg: Add the filtered voltage based SOC scaling (FVSS)
+8bc1c903df41 net: aquantia: Detach SMMU during PCI device removal
+e85ad8428c43 net: aquantia: Zero initialize forward ring descriptors
+12dc68ec499b net: aquantia: Fix for missing atl_unlock_fw()
+0f85d5691cad atlantic-forwarding driver v1.0.20
+d3e5ae5e00e4 msm: ipa3: Change smmu mapping logs to low priority
+738a5299bbe5 power: qpnp-qg: Update the function names for QG
+d2d0d4b6e369 include: uapi: Update the MIN_OCV_UV threshold for QG
+2cc4699ed103 power: qpnp-qg: Add logic to sanitize SDAM
+8089213c8043 diag: dci: Prevent using uninitialized variables
+43f34129b48f msm: pcie: add support for configurable PCIe core preset
+3076432128f7 arm: dts: msm: add PCIe core preset for qcs405, sa6155, and sa8155
+072048e717f7 dt-bindings: pcie: add entry for PCIe core preset
+854210c62107 msm: ipa: Enable support for dynamic loading of clients
+84f880acbd60 msm: camera: isp: Reset IFE hardware before active and wait list flush
+31766650f35d power: qpnp-fg-gen4: Cancel ESR fast calibration timer properly
+40beed366af5 f_fs: Return correct USB endpoint descriptor to user space daemon
+0637cbecaf21 ARM: dts: msm: update PCIe0 PHY setting to v1.00 for sdxprairie v2
+beed0916be20 ARM: dts: msm: Change the device path of vendor for atoll
+69086d1afa2d ARM: dts: msm: Add support to select default topology for atoll
+4dca47d7625d msm: ipa3: Fix to memory allocation failure
+0455d4db43b7 defconfig: msm: enable CONFIG_ARM_SMMU_TESTBUS_DUMP for trinket
+b8b99d143124 ARM: dts: msm: support testbus on gfx smmu for trinket
+5478828c3206 drm/msm/shd: add display-type support in shared display
+cfc41b5a6140 drm/msm/sde: change backlight setup to support shared dsi display
+72d9fb80026e drm/msm/shd: fix issue when clearing blend stages
+f79dceffe878 Revert "defconfig: qcs405: enable MHI host stack for qcs405"
+9c2fbeb6eef2 drivers: iommu: dump testbus output on tlb_sync timeouts
+c1e3c1408673 iommu: arm-smmu: add option to distinguish testbus implementations
+85716eb9d534 ARM: dts: msm: Add touch support for QRD atoll target
+da30a199bfc7 iommu: arm-smmu: add testbus support for smmuv500
+d846bb2d8ea5 ARM: dts: msm: Update cpuss dump sizes for Atoll
+1a3e2c91814c ARM: dts: msm: Add gpu bandwidth table for atoll
+171c13e79587 ARM: dts: qcom: Add camera nodes for atoll qrd device
+0adca3fb721e drm/msm/dsi-staging: decouple label and display type for DSI
+ef3bd8712ac9 mhi: core: wakeup waiters if early error is received
+186766e938e7 ARM: dts: msm: Remove multiple display port changes for atoll
+14005a25934c defconfig: msm: Enable additional configs for atoll
+d3853aab03e8 ARM: dts: qcom: Add iommu bus voting details for SMMU level
+a873b88834e6 drm:msm:dsi reject commit if seemless comes with active changed
+49315c456822 ARM: dts: msm: Update GPU fmax for atoll
+86792c36b348 power: qpnp-qg: Fix kernel memory corruption error in qg_device_read
+63e7a551006d msm: ep_pcie: Increase BME timeout
+80658840eff7 drm/msm: allow sde_atrace to show up on different process
+7567a0b4a2e4 drm/msm: enable counter trace
+6090ea3a3d64 dts: sa8195: fix display can't work in DP_MST mode
+cc06e0fa16b0 defconfig: change BLK_DEV_LOOP_MIN_COUNT's value for SM6150
+ebcb62659d27 ARM: dts: qcom: Add pinctrl of tof camera for atoll
+8b4cc26b3762 ARM: dts: msm: Add audio support for wcd937x codec
+6936b49c8705 cnss2: set iova_stop to U64_MAX
+251476462f6a ARM: dts: msm: Add audio support for atoll target
+cf58165854cf staging: android: ion: rate limit warning in ion_sgl_sync_range
+8fac8fc810c9 defconfig: msm: Enable overlay fs support for atoll
+d0032340da42 ARM: dts: msm: Add GPU power levels support to atoll
+13d2f8c36636 ARM: dts: qcom: Enable camera sensors in IDP for atoll
+f92b8876cf86 diag: Initialize peripheral mask properly before log switch
+5086eb2d9450 ARM: dts: msm: Add audio over usbc platform for atoll
+3735a6dd8be6 ARM: dts: msm: Add support for BT in atoll platform
+df8b0032eb96 ARM: dts: msm: Add audio codec wcd937x platform for atoll SoC
+361bd2cea7eb ARM: dts: msm: add regulator and clock for pil nodes
+9a8cdb40da14 ARM: dts: msm: Enable UFS, eMMC and SDcard drivers on ATOLL
+a6eea4506e79 ARM: dts: qcom: enable audio on QCS404
+fa389e41f6dc ARM: dts: msm: Add ATP platform support for atoll
+e3e388a67868 ARM: dts: msm: Add qfprom device node for Atoll
+93d51bb74fa0 drm/msm/sde: cleanup writeback phys_enc structures during wb disable
+a30e8911ab77 Arm: dts: Add devfreq node for Atoll
+b44d3e0efb38 pinctrl: qcom: Update direct connect configuration for atoll
+e200c53afeec phy: msm: qusb: Support reading of efuse value from two regs
+99377e85f709 ARM: dts: msm: Disable IO-Coherent allocation for SDXPRAIRIE
+e17d9bc85d64 msm: camera: isp: Added PPI driver functionality
+da07b42cfef3 ARM: dts: msm: Add touch support for atoll target
+28041fbf1e06 ARM: dts: msm: add dsi dt node for atoll target
+24bc3d9343bc ARM: dts: qcom: Enable phy regulators for atoll
+ece94fb30095 ARM: dts: qcom: Add csiphy, cci for atoll
+f4858b15a9ab ARM: dts: msm: Add camera sensor nodes for atoll
+4cab47e991aa drm/msm/dsi-staging: add support for controller version 2.4
+734cc8ddf1ed msm: isp: update the software irq mask
+cac3576b0858 ARM: dts: msm: add display dt node for atoll target
+21732b761889 ARM: dts: msm: Include dtsi file for v150_110 camera
+bd026c903cf4 arm64: cpu_errata: Add ARM erratum 1188873 for Kryo 4G
+e4722ba53e2b ARM: dts: qcom: Add cci, sensor pinctrl gpio for atoll
+f67565c38738 arm64: arch_timer: Add workaround for ARM erratum 1188873
+30d56c292090 msm: camera: LDAR Debug info dump framework implementation
+3ff92672596a drm/msm/dsi-staging: Add a new bridge DTS property support
+089ee242ffdc drm/msm/sde: fix unpaired sde trace
+46392bc35dce Revert "net: qrtr: Send HELLO message on endpoint register"
+65130d2ad231 msm: camera: cam_isp: Change default fps value
+ba0cac97bbf8 usb: dwc3: Queue sm_work only on sm_usb_wq
+d0d9ac8d381d ARM: dts: msm: Add camera sensor nodes for atoll
+9f482547cd9f ARM: dts: qcom: Enable phy regulators for atoll
+62c3ea8741a0 ARM: dts: qcom: Add csiphy, cci for atoll
+e148e239d154 ARM: dts: msm: Correct USB audio stream iommu SID for atoll
+470125b7e659 msm: ipa3: Update channel start as success in flow control state
+253bdb865055 defconfig: Enable PM8008 regulator driver for atoll
+d7153d09a4a9 ARM: dts: msm: Add charger, QG and VOL_UP configuration for atoll
+40ab3b4837a2 ARM: dts: msm: Add QG profile for ATL466271_3300mAh battery
+60ac557f5ec0 drm/msm/sde: add rev check for atoll target
+cd7f417d1cf3 msm/sde/rotator: add rev checks for atoll target
+8e1341c603d9 ARM: dts: msm: Add icnss node on atoll
+3d7b344a5343 msm: camera: Add csiphy version for atoll
+36e389547d8e drm/msm/sde: ensure LUTDMA is complete when auto-refresh enable
+eb15a2a1cff3 msm/sde/rotator: allow ot limiting for argb format
+7ac084e8ef76 ARM: dts: msm: Correct efuse register address on atoll
+11e7afe032ed ARM: dts: msm: Remove pm-qos-latency from atoll
+ed16fda0c8b2 ARM: dts: msm: Pass eud as extcon device for USB on atoll
+6710635d8870 ARM: dts: msm: Add AHB-IB voting bandwidth to bring up v150_110 camera
+cba50a68a6cf msm: camera: cpas: Add cpas support for camera v150_110 platform
+e0627d4435bb ARM: dts: msm: Add PPI clock sources to bring up v150_110 camera
+d6aea50127af ARM: dts: msm: Update bus interconnect topology for ATOLL
+a185b76b4f2b msm: camera: cpas: Add cpas support for camera v150_110 platform
+49c20b8fa803 ARM: dts: msm: Add AHB-IB voting bandwidth to bring up v150_110 camera
+5ef29ba365b1 msm: camera: eeprom: Release the mutex even though got error
+7751b4bd22da drm/msm/sde: update release fence handling for dp
+1aa393108486 ARM: dts: msm: Add qseecom heap for atoll
+86c2d44dcff5 ARM: dts: msm: Update the clock controller and GDSC nodes for ATOLL
+76fae74fef28 defconfig: enable synaptics_tcm driver for atoll target
+f4722847deee ARM: dts: msm: Add proxy client node for ATOLL
+c7e6a126d58f defconfig: Enable clock controller drivers for ATOLL
+f66217b11603 qseecom: correct range check in __qseecom_update_cmd_buf_64
+648701f4a41c ARM: dts: msm: add Sharp qsync panels for sdmmagpie
+889d85140e06 ARM: dts: msm: Disable io-coherency for GSI on atoll
+c8b2c22f327b ARM: dts: msm: Add thermal zone definition for ATOLL
+a80d7828b84d ARM: dts: msm: Add regulator cooling device for ATOLL
+88f7de35444c ARM: dts: msm: Add LMH-DCVSh configuration for ATOLL
+ee0d82e6d278 AndroidKernel: add TARGET_PREBUILT_INT_KERNEL_IMAGE
+35d9f1a804b0 defconfig: Enable lightnvm driver
+20d2af8cb0bb Revert "disp: msm: sde: add SSPP CP features to dirty list during IPC"
+87310f9d76fa clk: qcom: Add GPUCC clock driver for ATOLL
+8d3b44a7aab1 clk: qcom: Add debug clock controller for ATOLL
+8d8dbb541bc5 msm: ipa: Support for offload autostart in offload sub-system
+56fa0caa8bd4 ARM: dts: msm: Enable IPA SMMU S1 stage for atoll
+09dabd87c15c ARM: dts: msm: add MHI NET devicetree node for sdxprairie
+74319062a32f msm: mhi_dev: add random mac generation and ethernet parse support
+8bb6cf9cd7d7 defconfig: msm: Enable QRTR_MHI_DEV for SA515M
+893fe7e36e90 ARM: dts: msm: add hostless QUIN TDM configuration
+d2c029bdeec1 ARM: dts: msm: Add ion secure carveout for atoll
+e3ee6c36590e defconfig: msm: cleanup sdmmagpie configs from atoll
+b56d80c49359 ARM: dts: qcom: Add GFX iommu HSR setting for atoll
+79f74c15fabd ARM: dts: msm: Disable io-coherency for GSI on SM6150
+df32e0a85156 ARM: dts: msm: Add PPI clock sources to bring up v150_110 camera
+300bb6dd44a3 ARM: dts: msm: Add SMMU entry and disable io-coherency on sdmmagpie
+ff4d0c76e4c8 ARM: dts: msm: Add virtio spmi and pmic gpios on sa6155p and sa8155 VMs
+2580d48d10dc spmi: pmic_arb: add virtio spmi driver for VM platforms
+86ba212e83dd drm/msm/sde: add support to handle reduction in dma linewidth
+1d903d178bac ARM: dts: msm: Add inline crypto engine node for atoll
+0176bc99211c dt-bindings: batterydata: add SOH range property
+21e4f1a36d00 msm: ipa: Enable qmi send request to remove last connection
+3f960fc89a7d qseecom: correct range check in __qseecom_update_qteec_req_buf
+e28db38eca13 ARM: dts: msm: Update core isolation thermal zone thresholds for SA6155
+fdab2afa82df clk: qcom: Add support for NPUCC driver for ATOLL
+62677b79d9fb clk: qcom: Add display clock driver for ATOLL
+35b9a9949f2c clk: qcom: Add video clock driver for ATOLL
+f10d72b6da2a clk: qcom: Add camera clock driver for ATOLL
+eed9647d7622 ARM: dts: msm: Add support for EUD for atoll
+1642bff4f574 clk: qcom: Add GCC clock driver for ATOLL
+65f96fa9d425 msm: Fix address space violation in I/O accessors
+58cbe281bbf3 msm: kgsl: Remove extra call to turn off interrupts
+3df07c8b4a30 ARM: dts: msm: Add Bluetooth device node for SA6155p VM
+a3133d5609b5 msm: camera: isp: Added PPI driver functionality
+79c3d76079c1 ARM: dts: msm: enable qupv3_se7_4uart in SA6155p VM
+8f344f9d94a4 ARM: dts: qcom: Modify pinctrl settings for HS-I2S device nodes
+89822ecf3dde ARM: dts: qcom: Add new properties for HS-I2S node
+70313ed3d301 usb: dwc3-msm: Fix maximum_speed determination
+d5ed52b0a7a5 drm: sde: Remove feature support for IGC/3D LUT for virtual planes
+cf8a8395ce36 drm/msm/sde: add sde_crtc lock to protect sde_crtc mixers
+26968a615848 ARM: dts: qcom: Add HS-I2S device tree support on SA8155-VM
+ccb9d46f8d46 power: smb1390-psy: Add support to identify CP model name
+a7ad979219df ARM: dts: msm: Add dtsi support for v150_110 camera
+f4622de69302 defconfig: msm: enable spmi pmic pinctrl for QTI Quin GVM
+976445dfd493 drivers: net: can: Add non-blocking call for end upgrade ioctl
+5e3b7b62c241 drivers: net: qti-can: Add ASYNC probe and power notification
+0fa9505e3b00 ARM: dts: qcom: Add iommu bus voting details for atoll
+fa88c2431ad6 ARM: dts: msm: Cleanup existing dts of 403
+70f9e86d9c24 diag: dci: Validate pkt length before parsing for full header
+500d13b90e9b msm: camera: lrme: Handle release lock when returning from error case
+8681184defde ARM: dts: msm: update the memory map to v5 on atoll
+427195c53671 Revert "defconfig: QCS405: Enable USB diag_bridge, QRTR and RMNET host drivers"
+5180cfdffb83 iommu: arm-smmu: Add hibernation callbacks to pm_ops
+ba2d925fe42b ARM: dts: msm: Enable virtio clock for sa6155p vm
+f62825f17f58 ARM: dts: msm: Disable UART_4 on SA515M CCARD boards
+8145c43a705c clk: qcom: gcc: Add video clock resets for sdmshrike
+a91d193f40af net: qualcomm: rmnet: Pass on bad csum segments
+dd4708254436 drm/msm-lease: create DRM MSM LEASE driver
+204e49ad209e ARM: dts: msm: Set ethernet PHY reset delay for SA515M CCARD
+4a213daacaf8 ARM: dts: msm: Enable PPS gpio for SA515M CCARD boards
+82fd90b26e18 ARM: dts: msm: Enable the OSM clock controller for ATOLL
+7fbea767ca69 clk: qcom: osm: Add support for OSM clocks for ATOLL
+4c174449e34e ARM: dts: msm: Update compatible string for SCC on the SA 8195 target
+d9a61a682d92 drivers: soc: qcom: Enable the virtual subsystem notification driver
+2bcfdc6d7188 defconfig: msm: Decide UART sampling rate based on config
+40e937b88472 drm/msm/sde: add DP phy selection
+a1b7d2769edb qbt: Add ioctls to acquire and release wakelock
+125650f4662a usb: phy: snps: Turn off CXO clock from msm_hsphy_dpdm_regulator_enable
+0d17cada9125 soc: qcom: scm_qcpe: Add tolerance to HAB failures
+568641fbf611 ARM: dts: msm: Remove extcon and PHY nodes on atoll RUMI
+4573085600ed ARM: dts: msm: Add dtsi support for v150_110 camera
+f3966d24ef00 ARM: dts: msm: Add slimbus instance for ATOLL
+b176e313052a drm: msm: dsi-staging: Fix error handling in case of EPROBE_DEFER
+ade3c3e4b226 msm: camera: Add csiphy version for atoll
+1cfb7c3f89e7 msm: kgsl: Don't deassert GBIF halt before GPU gdsc goes off
+5c76adbbff75 drivers: soc: qcom: Update atoll SCT entry for modem SS
+5449a6c9c587 ARM: dts: msm: Add pm8008 support for atoll
+c58825225596 ARM: dts: msm: add PM6150/PM6150L rpmh regulators for atoll
+f4f2f6674735 serial: msm_geni_serial: Enhance debug logs and support
+9b913d10616c ARM: dts: msm: Enable virtio clock for sa8195 vm
+9d196dead2db clk: qcom: Add usb and pcie virtio clocks for sa8195p
+76308090966f msm: ipa3: Fix to recycle ODL consumer pipe SKB buffer
+a9b54b307ec9 ARM: dts: msm: Include display for SA8195P ADP STAR
+6844c231ba80 arm: mm: Set dma_ops_setup only for IOMMU_DOMAIN_DMA
+48e9b7f89097 ARM: dts: msm: Enable QCA6390 for SA515M CCARD boards
+aea1f3510a98 disp: msm: dp: add timeout state for simulated AUX transfers
+1f0b23ea664e disp: msm: dp: update the connected state during clean up
+b1a5696fe898 disp: msm: dp: disable audio during display clean up
+24381c512215 net: qualcomm: rmnet: Avoid *_hdr() helpers while adding linear GSO
+42743be153d0 drm/msm: fix re-entry problem for msm_atomic_commit
+c6e1e1f48174 ARM: dts: msm: Disable io-coherency for GSI on Trinket
+56a791feec57 diag: Do not include unallocated buffer to md table
+5a25914dbeca disp: msm: dp: add session check for audio register programming
+ae225cbe3130 defconfig: msm: change BLK_DEV_LOOP_MIN_COUNT's value for Trinket
+443c3fc462cd ARM: dts: msm: Change display rsc to use AWAKE votes for ATOLL
+a373fb659f80 msm: kgsl: Ensure GPU gdscs are off in SLUMBER and during hard reset
+263b5a40f17f ARM: dts: msm: Add QMI cooling device for ATOLL
+88afe5d70ace defconfig: msm: Update thermal drivers for ATOLL
+62dc88e12eda driver: thermal: bcl_pmic5: Use mitigation level interrupts
+5c9de074d7ac ARM: dts: msm: Add virtio regulator for sa8155 vm
+94f79810e484 drivers: of: Add early param memrsv
+9548e424c82a msm: camera: isp: Log information during IFE acquire failure
+9188d6a08a80 ARM: dts: msm: Add virtio regulator on sa6155p virtual machine
+1c232f80b968 defconfig: msm: Enable virtio regulator for QTI Quin GVM
+1c6ecf0d358a regulator: add virtio regulator driver
+70983ed9d1dd msm: camera_v2: reject the late request
+963bf84722cd clk: qcom: Change init level for virtio clock
+3a86a3ed5d43 ARM: dts: msm: Add TLMM GPIOs for direct connect support on SA6155P VM
+276187956c81 drivers: msm: pinctrl: Add custom TLMM direct connect list feature support
+1a79f2584ef8 net: qrtr: Loop on mhi_dev_read_channel until it returns 0
+5c9c165066de net: qrtr: Change the in and out channels
+d33025a7865e net: qrtr: Send HELLO message on endpoint register
+20736a8405d4 defconfig: msm: Configure QRTR Node ID for sdxprairie
+5f530f2b71a6 net: qrtr: Add dynamic node id configuration
+982cd7627f56 defconfig: msm: Enable QRTR MHI DEV for sdxprairie
+3691814d653e ARM: dts: msm: Add QRTR MHI DEV device for sdxprairie
+89754e5ed45d net: qrtr: Add support for a mhi device transport
+76c914096954 msm: pcie: control when PCIe MSI driver can access SNPS registers
+f0189fe65156 defconfig: msm: Enable SYSVIPC for sa2150p
+d1d97137f535 defconfig: msm: Add back configurations to SA2150P
+90552768f8e1 ARM: dts: msm: register IPCR for early MHI notification
+764945365659 ARM: dts: msm: Add USB for SA8195 Virtual Machine
+e71c354c5b35 msm: camera: cam_isp: Recovery after IRQ delayed
+889e5f7bbbc5 ARM: dts: msm: Add qrng node for atoll
+a4da8590fc55 ARM: dts: msm: Enable TZ-log driver for atoll
+805a14b1d29e ARM: dts: msm: Add crypto device nodes for atoll
+1090ccf8f04b gpi: Evaluate EE GSI registers offset for QUP
+f590dae75736 power: smb1390-psy: Configure IREV and main's ICL to prevent IREV condition
+2baa4a42f2ca power: smb1390-charger-psy: use voting mechanism to control slave
+5def64ce745d msm: camera: isp: Add fps Blob support
+5e173ecd3fe2 defconfig: sm8150: change BLK_DEV_LOOP_MIN_COUNT's value
+365690524589 ARM: dts: msm: Add GPI DMA and QUPv3 SE dt nodes for atoll
+8a42496377d7 defconfig: quin gvm: add ptp config
+c0e7627fca46 net: qrtr: mhi: Use spin_lock_bh in qcom_mhi_qrtr_send
+72c0fd672669 power: power_supply: Display skin health in proper format
+8020cf10297d ARM: dts: msm: Introduce bus topology for ATOLL
+91e7ffd65e08 clk: qcom: Update SCC regulator configurations for SA 8195
+9876434e87c1 power: smb1390-psy: Configure temperature output buffer to High-Z state
+6687a60d3e69 power: smb5: Add support for thermal mitigation for CC Mode
+b88aaa3a17d7 msm: ipa: Use correct VLAN header size in partial headers
+764689b3e825 mhi: core: export symbols for references
+eac9c06e484c ARM: dts: msm: Add eSOC support for sdmshrike
+db8206e636d7 msm: msi: update SNPS MSI mask and unmask based on PCIe LPM
+a506692d2e67 ARM: dts: msm: Update status fields for PIL nodes on SA8195P ADP STAR
+9686a666202d drivers: esoc: Set crash status after modem status goes low
+7513448c914c esoc: Protect the crash shutdown path against reboot notifier
+437d40b8466a ARM: dts: re-enable mhi boot logger channel for sm8150-sdxprairie
+1b7b584acde8 soc: qcom: dfc: Traffic control optimization
+c2624262fd58 dt-bindings: thermal: bcl: Update the interrupt name for bclv5
+0329ffa07ebd ARM: dts: msm: Add the smcinvoke node for atoll
+98bc8498263a dt-bindings: qpnp-smb5: Add property to enable thermal mitigation
+7c5cb7ebff4d ARM: dts: msm: Enable lpm and modify boot option for QCS405
+78c14fcb6e86 ARM: dts: msm: Add qseecom node and heap for atoll
+5f3fe471f4f3 ARM: dts: msm: Update IRQs for APPS SMMU on SA8195 virtual machine
+f87a5edc9c65 msm: kgsl: Free up preemption buffers on ringbuffer close
+c503c7596d68 defconfig: sm8150: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+299370814873 ARM: dts: msm: Enable deep pre-fetch on apps smmu for atoll
+b6c544aa54ca serial: msm_geni_serial: Decide UART sampling rate based on config
+b0a706dc8d16 defconfig: sa515m: Rename defconfigs
+128d9c81dda5 ARM: dts: msm: Correct the qmi id of npu etm for atoll
+e027eb515401 rpmsg: glink: Resource cleanup on glink smem probe fail
+30c686a11f35 ARM: dts: qcom: Add HS-I2S device tree support on SA8155
+0528e7f72bbd sched: Add task boost feature
+f947fec2d1ec defconfig: trinket: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+873ea921b3b9 clk: qcom: clk-rpmh: Add support for clk-rpmh driver for ATOLL
+463b3b0e5391 msm: camera: Add new sof event to include nanosecond timestamp
+cb92d4423355 msm: ais: eeprom: Fix OOB condition for memory map count
+464e1004aed2 diag: Update hdlc mode for all peripherals after mdlog exit
+7a75626bf3be msm: camera: isp: Enable pixel_format_measurement in CSID
+8892d4f22dd6 msm: ipa3: Update BW values for debugfs to change clk rate
+d2a049b51bb9 ARM: dts: msm: Add QMP debugfs client on sdmshrike
+e78c217d009e ARM: dts: msm: Update the SDHC driver for SA8195P ADP STAR
+c3e062d8cfc4 ARM: dts: msm: Include PCIe for SA8195P
+0e1c32ea10ad devfreq: bw_mon: check for the return value of start_monitor
+8779eed86e46 devfreq: bimc_bwmon: Add support to enable BWMON clks
+16609f93e556 mhi: core: make timesync register access strict
+dea80350151e ARM: dts: msm: Enable dual-CAN for SA515M CCARD
+8f7bad46c65a defconfig: sdxprairie: Enable burst flow control
+748f46926c2e Revert "ARM: dts: msm: Defer regulator disable for trinket GPU SMMU"
+df81f1c596c9 defconfig: qcs405: Enable ARCH_QCS403 in qcs405 defconfig
+b20ab5df5a8e msm: kgsl: Avoid redundant AOP message during GPU wake up
+7e6ef6d1e310 power: power_supply: Add property to display skin temperature status
+4b9fd21a5ece msm:camera:isp: Fix array index bound checks
+7043d28edee8 msm: ipa4: Cleanup duplicate code used for setup coalescing pipe
+5fd9214fcbc3 net: qualcomm: rmnet: Fix incorrect UL checksum offload logic
+f54ac7a656d4 drm/msm/sde: add support to access hw irqs regs depending on revision
+8a5fdbc5d7cb ARM: dts: msm: Add audio support for SA515M CCARD boards
+6005908e5d19 msm: ipa4: Send new QMI indication message to modem for RSC pipe
+3a28168a38a1 msm: ipa4: initialize the replenish pointer for WAN consumer pipe
+88942b1ef017 msm: ipa4: Compare unsigned value with less than zero always false
+9468e73c41d0 msm: ipa4: Don't decrease channel ref conunt for GCI channel
+c0a7f43e69a3 ARM: dts: msm: Update RPMh clock for SA8195P
+e72948be4c29 ASoC: tlv320aic3x: Add reset inverted DT property
+07737f8aeb75 defconfig: msm: Enable TLV Audio codec for sdxprairie-auto
+edd49fca0fbd msm: ipa3: Cleanup MHIP Dl rules on IPACM restart
+cd4ff658f3f6 msm: ipa3: add qmi support for cleaning MHIP rules and frags
+e8247f0bb39f ARM: dts: msm: Use PM8195 regulators for SA8195P ADP STAR
+fc4ad6f2271f usb: dwc3: Prevent continuous retries on error event
+7badbcc3dcbb sched/fair: Only strict skip for current task
+545b21dc702d msm: ipa3: vote to turbo incase of APQ platform
+e840a91ffe81 drm/msm/sde: update QSEED4 UV_PRELOAD configs
+1cdadff17404 drm/msm/sde: add qseed4 support
+4f2db47723c9 ARM: dts: qcom: Modify the device tree for HS-I2S driver
+b56fde2f9abd cnss: Add cnss driver to msm-4.14
+05b2f9c77802 power: qpnp-qg: Replace ktime_get with ktime_get_boottime
+792585ff34ab power: qpnp-qg: Report SOC in centi-percentage
+e30487306f5a devfreq: Do not round up bandwidth on BWMON4 devices
+813fe8a08840 dt-bindings: usb: Add gsi-disable-io-coherency to driver bindings
+627a1ad8e587 usb: gadget: Mark usb gsi driver dma memory as cached
+28b05f5b499d usb: dwc3: Allocate and free TRB buffers from ep ops
+96289c798cef rpmsg: glink: Resource cleanup on glink native probe fail
+fe8f4c343d53 usb: quirk: add no-LPM quirk on Kingston DataTraveler 3.0 drive
+f47a5ae050c2 ARM: dts: msm: add PBS device for PM8150B
+1d827b5189ea power: qpnp-fg-gen4: correct SDAM register used for calibration
+032075acf3fd defconfig: msm: Add defconfig files for SA2150P
+deaa93690974 msm: ipa3: Fix spin_unlock_bh warning in wan driver
+a49479c9bf51 ARM: dts: msm: Update camera SIDs and clock rates for SA8195P
+ebcd1afa6faf soc: qcom: mem-offline: fix mem online failure notification
+a0484921a4ff defconfig: msm: Enable PPS for sdxprairie-auto platforms
+9d88334403f6 ARM: dts: msm: Change tlmm-central-base base for sdxprairie emac
+cd0e77ec5194 ARM: dts: msm: Enable EEPROM for SA515M boards
+80647ca90d34 defconfig: sa515m: Enable the AT24 EEPROM for SA515M
+9c8e3332e3d4 ARM: dts: msm: Enable RGMII for SA515M CCARD
+40dee15fadf5 ARM: dts: msm: Update SSC entries for SA8195P
+035eb1f641f7 drivers: soc: qcom: Add snapshot of virtual subsystem notification driver
+f9a13118a039 msm: kgsl: Fix race condition between drawobj and context destroy
+820a58b7f02f soc: qcom: spcom: fix error code on create existing channel
+63f6e6d4ca34 ARM: dts: msm: add cti trig_out gpio for atoll
+d483f0e997bc ARM: dts: msm: add Sharp qsync panel for sdmmagpie
+a2b0e7c74536 disp: msm: sde: add proper null checks
+ffbc14e415bd disp: msm: sde: add per_pipe_bw_high option
+b3e0ba4dd80f drm/msm/sde: expose ubwc version through capability blob
+da2f6120f055 drm/msm/sde: fix the possible memory leak in driver catalog
+45e3a89e4e51 drm/msm/sde: increase Bus BW ib/ab vote during cont-splash
+ed63d73cf9e1 drm/msm/sde: add support to handle horz and vert decimation support
+c7dfb78f47db drm/msm/sde: add sui blendstage and QoS FL caps for kona
+9a3e658281a4 drm/msm/sde: add CWB and LUTDMA VBIF remap setting
+36b72789496f drm/msm/sde: use cwb qos lut during clone mode for cwb
+bc129607664a defconfig: msm: Enable SSBD config for Atoll
+32a57e795d75 arm64: sysreg: Clean up instructions for modifying PSTATE fields
+11ca41ac50e6 arm64: ssbd: Add support for PSTATE.SSBS rather than trapping to EL3
+884f2b3999d1 power: qpnp-qg: Add support for fast-charge config
+fe0d70526cbb dt-bindings: qpnp-qg: Add properties for fast-charge config
+ad1c713924b4 power: qpnp-qg: Add sleep-mode configuration for QG
+6044ba2f01ff arm64: cpufeature: Detect SSBS and advertise to userspace
+f7bb6f3a5d8a arm64: entry: Allow handling of undefined instructions from EL1
+c38c34b60780 arm64/sve: System register and exception syndrome definitions
+9c7d2fa902ec diag: Prevent possible use-after-free while updating event mask
+3acef302b334 defconfig: qcs403: Add new defconfig of qcs403
+09c963fc51a1 ARM: dts: msm: Add device tree support for board variants of QCS403
+16cd8a7692e5 soc: qcom: socinfo: Add soc information for QCS404 and QCS407
+f7677f6150c5 ARM: msm: Add support for new board config qcs403
+59e9546090de power: battery: handle charging termination at lower float voltage
+de0c90774523 ARM: dts: msm: Add dtsi entries of QMP PHY and QUSB2PHY for ATOLL
+506b6645b219 msm: adsprpc: Check fastrpc channel and context during map and unmap
+b44364587729 ARM: dts: msm: change audio memory type for sdxprairie
+5e577a52254e drm:msm:sde: avoid triggeering vsync callback on CWB encoder
+6416d6ecaf45 ARM: dts: msm: Rename the smmu dtsi file name for atoll
+40212054c8ed android: lowmemorykiller: disable ALMK during memory offline
+1db981f0ac8b dt-bindings: qpnp-qg: Add properties to specify S2 config in sleep
+022bfd9ee3a1 ARM: dts: msm: Remove MHI device tree for QCS405
+9ba9aa51181f msm:ipa: mutex protect mhi dev for voting/unvoting pcie clocks
+3f7787b13692 ARM: dts: msm: Set the default mode for USB on SA8195P
+395d349bc2d0 ARM: dts: msm: Update bandwidth values for the sdmshrike v2 target
+d4a114deb2f4 msm: npu: Don't sync dma buffer after mapping
+0b0950fa50cb msm: npu: Use mutex to protect map/unmap to avoid race condition
+657d5337600a defconfig: Enable MICREL_PHY for SA515M
+76853f2afad3 defconfig: Enable CAN for SA515M
+dddf7fedf9bc drivers: net: qti-can: Use div_u64 for 64-bit division
+f08e23c4b0dc ARM: dts: msm: Add fastrpc SMMU sids for sdmshrike v2 target
+11fa35a5aac5 net: qualcomm: rmnet: Workaround for HW checksum error
+b3fd77235fa2 msm: camera: eeprom: Fix OOB condition for memory map count
+74ce53070428 pinctrl: qcom: Add hibernation support for sm8150
+e2653fbd7476 pinctrl: qcom: Save and restore TLMM registers
+ba5bc0eab789 icnss: Check firmware status to ignore QMI handshake
+6068dc23b36a ARM: dts: msm: Enable AVB system property on atoll
+0c30b8d2bd24 ARM: dts: msm: Add initial qrd support for atoll
+2419866aa682 msm: ais: enable/disable rdi separately
+31b4ae6f99d8 ARM: dts: msm: Correct active tcs count for atoll
+ea4e85bae49e zram: fix race condition while returning zram_entry refcount
+962b3d7f1f15 AndroidKernel: Fixed compile errors after enable boot header version 2
+061b74b210ea msm: camera_v2: isp: Double stats ub size
+226c3cd33e28 ARM: dts: msm: fix video node name for atoll
+9f2d8de0cd36 drm/msm/sde: add support for overlap pixels width
+4b31f8989c48 ARM: dts: msm: Make wakegic as interrupt parent for subsystem on trinket
+b9aa48d6f7c8 msm: ais: change packet fmt to 0 for plain16
+60283b038640 msm: vidc: Ensure size of the data available before typecasting
+d696db77e133 drm/msm/dsi-staging: add support for overlap pixels in dsi driver
+7a6155807d1f ARM: dts: msm: Use sdmshrike regulators for SA8195P ADP STAR
+70021e9eaa45 msm: ipa: wdi3: Update with right sequence
+1c55b1bbe3e0 msm: camera: isp: Handle wait and active list during flush all
+cf86abf17ab8 usb: pd: Do not allow pending out going requests with src_cap_ext
+8068ac4f9025 usb: phy: snps: Enable auto resume feature only in host mode
+3039994ce51d drm/msm/sde: check for ppsplit topology from current state
+58997453607f input: qpnp-power-on: Add support for suspend to disk
+0ed84179d01b sound: usb: Fix possible race between release and cleanup
+2861f691bd41 diag: Replace improper checks with proper ones to clear stats
+7a3ab0dc8e8f msm/sde: add SID register support for offline rotator
+1c8e301bda5a drm/msm: handle rsc jitter time based on rsc state
+628208a321d4 drm/msm: update rsc_min_threshold for sde rsc hw block
+78c3eb1fdbd6 drm/msm: set sde rsc min threshold time
+783596180a3e drm/msm: adjust backoff time sde rsc
+24b4b4d9d132 drm/msm: update mode2 entry sequence for sde rsc
+92569df6f1da drm:msm: add kona sde rsc support
+c64c020aac67 msm: ais: Support multi-client for req and sync mgr
+8fc52d130f85 usb: dwc3: Stop active transfer on control endpoints
+510b89b7610a drm/msm/dp: add checks to prevent buffer overflows
+358fc0a19fa1 msm: camera: util: Enabling logs to improve debugging
+246cbe324448 ARM: dts: msm: Update clocks for sdmshrike-v2
+ade08b55aa67 ARM: dts: msm: Add pwr levels for gpu on sdmshrike
+184d6f52ef2d mmc: sd: set card removed to true
+092f6ef95c6e mmc: core: Reset on error during deferred resume
+a203bd767ccb Revert "mmc: core: rescan for card if deferred resume fails"
+7be78c8d6afa net: qrtr: mhi: Register for early notifications
+dd17d8364f48 ARM: dts: msm: Add SDE DP support on SA8195
+04edc9abbb4d ARM: dts: msm: Update PHY sequence for PCIe EP on sdxprairie
+0042b957999a ARM: dts: msm: Update PCIe EP link speed for sdxprairie
+9d8664b8e274 net: qualcomm: rmnet: Avoid copy twice in non linear cases
+ad4706f238cc ARM: dts: msm: Add QDSS CTI pin definition for sdmshrike
+aad6f0a0186e ARM: dts: msm: Add syscon nodes to the sdmshrike target
+bfbf1b38f090 cpuidle: lpm_levels: Wakeup biased cpu
+251b09ac09c6 Revert "ARM: dts: msm: set dmic sampling rate in QCS405"
+6afd05234398 msm: vidc: Add configurations specific to atoll
+d6a9708ba061 ARM: dts: msm: Add wake-gpio for qcs405-iot-sku6 variant only
+8938ebd3893e soc: qcom: smp2p: Add support for suspend to disk
+d0606a644d07 mailbox: msm_qmp: Add support for suspend to disk
+1562c8cebe22 ARM: dts: msm: Add dcc node for atoll
+3ceccc66bbb8 ARM: dts: msm: Add mem_dump node for atoll
+575b6566f8f2 diag: Close the control channel during SSR
+b7b5c1a7e733 drm:msm:sde: avoid CWB connector in determining active crtc
+dbec963d0d35 diag: Update new msg, log and event masks for diag logging
+9f6b5c3141d1 BTFM: Add support for Apache 1.2.* cards
+7b3b9aa4b6ee Hibernate: Add check for pte_valid in saveable page
+6edc4771b995 ARM: dts: msm: Add venus pil node for atoll
+b0079fb73c08 irqchip/gic-v3: Re-init GIC hardware upon hibernation restore
+a5dbed3f467c dt-bindings: net: qrtr: Add MHI Device transport bindings
+9795e5126033 msm: mhi_dev: Update IPCR channel enums
+2606708ca95b qseecom: use scm_call2 for shutdown app
+2c916d361138 msm: vidc: Enable input crop extradata
+912b7c9971bd net: qualcomm: rmnet: check for over-pulling
+c1e0ddf00d8c icnss: Skip removing WLAN host driver during recovery
+6d2bed15d71f ARM: dts: msm: Add modem sensors for SM8150-SDXPRAIRIE
+aaf6235816d4 ARM: dts: msm: Enable QMI cooling devices for SM8150-SDXPRAIRIE
+01b74bec90ad dt-bindings: thermal: qmi_sensor: Add MACROs for QMI sensors
+95165ac0c421 dt-bindings: thermal: Add new thermal QMI sensors
+cfc4e4efee64 drivers: thermal: qmi_sensor: Add support for new sensors
+6d59f94947ab serial: msm_geni_serial: Maintain correct line id for port
+66f0a6fb7324 clk: qcom: fix pcie virtual clock name mismatch
+86d77e6ccef5 msm: vidc: Fix validate_pkt_size macro definition
+177db32a7101 ARM: dts: msm: Add jtag_mm nodes for atoll
+2e07f2a201f6 ARM: dts: msm: Add regulator and peripheral devices for SA8195
+2304af342f8d thermal: adc_tm: Ensure drvdata is set for all adc_tm instances
+db922aa00fe2 ARM: dts: msm: Add devices for sa8155 virtual machines on multi mode
+1b6e4127eba1 ARM: dts: msm: Enable uart for sa8155 virtual machine on single mode
+310a9cbc406d mhi: core: Transition to READY state if EE is pass through
+0983afa80919 Revert "msm: vidc: Check image encode capabilities"
+5026b3355e7f sched/fair: Avoid unnecessary active load balance
+5ddc0fe68f43 ARM: dts: msm: disable lpm and modify boot option for QCS405
+6e083de5a5a0 msm: pcie: add QCS405 device id support
+8584ed2111e8 msm: camera: cpas: logs added in the failure case for stop hw
+cc49fed38424 dcc_v2: Reset the lock register if config dcc list fails
+bd9292f2b1fe soc: qcom: hab: unify variable type to avoid implicit conversion
+c1b00eaa7875 ARM: dts: msm: Add cnss_sdio dt for QCS405 and enable sdio in sdhc_2
+f67d1d15e7b8 ARM: dts: msm: Update to memory map V6 for sdxprairie
+ecb4c97499ca ARM: dts: msm: Raise the IPA threshold for sm8150-sdxprairie
+1038c5dffb65 ARM: dts: msm: Add USB2 for sdmshrike
+ea605b7bff33 ARM: dts: msm: Add entries to the root node for sdmshrike
+c3dee4c25e9d ARM: dts: msm: Update entries for serial engine instances
+a554838a9b55 soc: qcom: wda: Disable powersave work on deinitialization
+4277aebeff91 net: qrtr: Free skb if qrtr_node_lookup fails during qrtr_fwd_pkt
+ae16da658afb ARM: dts: qcom: Add CPU and cluster cost for sdmshrike
+5795307bdf9e defconfig: qcs405: Enable cnss_sdio driver for Tufello
+57a7b626334c Bluetooth: Fix compile issue when both CONFIG_CNSS and CONFIG_ICNSS enabled
+384621f685f6 mmc: core: Do not set host->card to NULL if oldcard is not released
+873d038fd753 usb: f_gsi: Fix error handling path in ipa_connect_channels
+9fcd72d5ccdc ARM: dts: qcom: Remove vidc DT file for sdmshrike
+71c8a6805ab6 msm: camera: Print mem handle index and io config index
+57604d37f616 msm: camera: isp: Add irq status prints to CAM_ERR
+1a7f72186a89 drm/msm/dsi-staging: fix the DMS mode flag setting
+e56c3232fb5e ARM: dts: msm: Add video device node for atoll
+ddf032eac157 msm: camera: csiphy: Support multiple data rates in CSIPHY for sm6150
+b07be3d6ddaf cnss2: set iova_start and iova_stop to 0
+309c4081b2da ARM: dts: msm: Add parameter override for SDXPRAIRIE
+11245d7e5154 msm: kgsl: Program sub-cache ID for SC8180
+b8579e135e2e ARM: dts: msm: Supply dll-hsr settings for sdhc on sdxprairie
+72893a4ba26b ARM: dts: msm: add initial MHI devicetree node for QCS405
+c98acfd7b548 ARM: dts: msm: update the phy interrupt in sdxprairie
+5790a4904d29 msm: camera: isp: notify boot time stamp with precision
+52677f542b96 ARM: dts: msm: Change irq number of virtio clock
+9f461afe10da ARM: dts: qcom: Enable display driver node for trinket tasha and qrd
+153a487ad5ab cnss2: Use uninterruptible wait for idle shutdown/restart work
+b8acf5e4013e drm/msm/sde: Enable pp-split support for display driver
+25b489cddb08 ARM: dts: qcom: enable mi2s gpios dynamically in qcs405
+317d58ec6456 power: smb1390: fix NULL pointer de-reference in resume path
+0eae1c563c87 ARM: dts: msm: Add overlay DT nodes for sdmshrike
+f4bc18cfcad4 mhi: cntrl: qcom: register for early error fatal notification
+d1e7b91a71d3 mhi: cntrl: qcom: timesync IPC log buffer support
+ef1260fb4c12 mhi: core: add support for early error notifications
+07b8393eed22 mhi: cntrl: qcom: force a suspend during boot
+fa66312f7659 mhi: cntrl: qcom: reset suspend state to active in suspend error cases
+162713297075 mhi: cntrl: qcom: bring MHI out of suspend prior to MHI shutdown
+5843503f00f5 msm: IPA: enable uC debug stats for gsi on IPA4.1 APQ
+d852427d28cf msm: ipa4: GCI protocal channel update polling mode for dependent channels
+9ac315ee6d52 msm: ipa4: Fix to configure pending packelist WAN consumer pipe
+d1baaa5f8d4d msm: ipa4: increase event channel ref count for non-coalescing pipe
+de081f83f5e4 defconfig: msm: Enable DM_VERITY_FEC support
+84c5576cc616 ARM: dts: msm: Add TLMM GPIOs for direct connect support on SA8155 VM
+95f04359ab22 drivers: msm: pinctrl: Add custom TLMM direct connect list feature support
+cdc00261b03e ARM: dts: msm: Add bluetooth pin definition for sdmshrike
+216ae5275e28 ARM: dts: msm: Add QSEECOM, SMC, and RNG nodes to sdmshrike
+c8bbb1e3a59c defconfig: msm: enable CONFIG_USB_RTL8152 for sm8150, sa8155, trinket
+8eb5df7461f6 defconfig: sa6155: Enable CONFIG_GNSS_SIRF
+d1e016256bb9 ARM: dts: msm: enable SiRF GNSS Driver and hsuart1
+41e8a9519b5a cpufreq: schedutil: Fix for limits update with fast switch enabled
+460684e1743b disp: msm: sde: Update gamut non-uniform support
+4abb683f5702 drm/msm/sde: Add 3D gamut support for version 6
+0969f6b15a7d drm/msm/sde: Add 1D LUT IGC support for LUT_LAST
+7782f2cee0ea ARM: dts: msm: Add support for SA515M CCARD boards
+c21c32473e8d ARM: dts: msm: Add labels to PIL entries for sdmshrike
+4cadc271d517 msm: ipa3: vote turbo when tethering on
+2d30ac5c7501 mhi: cntrl: qcom: add usage of system pm state notifications
+1e602cdd1fa9 mhi: core: notify mission mode transition to control driver
+8d8e470d0db8 mhi: core: do not trigger sys_error if controller already entered RDDM EE
+76cfefd09706 mhi: core: skip MHI state SYS_ERR handling if RDDM is supported
+166b4faf381c mhi: core: add time synchronized logs support
+7f34cbab70f3 msm: ipa: Add support for crashdump in IPA offload sub-system
+639cbe86715f msm: kgsl: Correctly update script size for MVC registers
+3f26e3414fe7 diag: Switch to correct logging mode after mdlog exit
+324ae1f3f174 defconfig: msm: disable PM_AUTOSLEEP for sm8150, sa8155, trinket
+c04a6b619361 Coresight: byte-cntr: Don't read byte-cntr when etr is diasbled
+07e7e2c2cc32 sched/fair: Avoid cpu idle to deep sleep when have active balance
+c61d01152002 sched: core: Clear walt rq request in cpu starting
+331ddccf489a ARM: dts: msm: update atoll DT entries for fastRPC usecases
+58a1490ed387 ARM: dts: msm: Fix ADC compilation error for atoll
+f308c564b6ab thermal: adc-tm: Add suspend_noirq support for ADC_TM
+7065a2f8eb04 msm: camera: reqmgr: Verify the req of two links
+39f0b2bac192 msm: camera: reqmgr: Add initial sync support
+9bf4b4a10c24 mhi: cntrl: qcom: set device timer frequency for timesync calculations
+9f0dc12e390a drm/msm/dsi-staging: Add range check in debugfs_dump_info_read
+cc5e68daf926 msm: vidc: Check image encode capabilities
+311a92a36d1f icnss: Reduce the shutdown timeout from 50sec to 15sec
+35e0d2edead9 Documentation: Add DT bindings on atoll
+d8fc5e41d05d power: qpnp-qg: Add support to display available power
+273e840ee551 ARM: dts: msm: Add QMP debugfs client on atoll
+425fee42013c drm/msm/sde: ensure rsc in vid state at writeback null commit
+814f1cb508ce ARM: dts: msm: Add GPU properties for atoll
+d4982419a66b dt-bindings: qpnp-qg: Add property to specify system minimum voltage
+c8f9898628e9 icnss: Synchronize idle shutdown and restart
+1b518cc6b890 serial: msm_geni_serial: Make sure to have buffer for stop rx
+7b39d5a76921 power: qpnp-qg: Allow SOC jump during resume
+218076b3428f dt-bindings: qpnp-qg: Add property for minimum sleep time
+dabaa7749c89 power: battery: fix usage of un-initialized variable in FCC stepper
+fef5e365b721 msm: ipa: QMI update for firwall config
+4e3443470d76 power: qpnp-fg-gen4: add support for calibration configuration
+d4af177eda41 dt-bindings: qpnp-fg-gen4: add support for PBS configuration
+6836c3649cce defconfig: sm8150: Enable QPNP_PBS driver
+0d04de565004 f_gsi: Increase MBIM IN aggregation to 31KB
+a2fed4441067 net: qualcomm: rmnet: lock descriptor pool
+a91cb0726961 ARM: dts: msm: add proxy bandwidth vote for sm8150
+140a82942875 mhi: core: calculate times based on given timer frequencies
+9c88718c4572 AndroidKernel: Building dtb.img to support header version 2
+a4cc2897651d ARM: dts: msm: Support 1.4 GHz frequency level for QCS405
+17c367e4e6af drm/msm/dp: clear ASSR in ctrl config
+0b0a93d8eb2b ARM: dts: msm: Add GPU frequency @500Mhz to NOMINAL
+a54ebbb38549 msm: kgsl: Only read throttle counters if GMU is enabled
+fba9fa0f6bf2 ARM: dts: msm: Add device node support for TSENS in atoll
+77a6180c4799 clk: qcom: Use regmap_update_bits() to update the clock flags
+d792ad38640a ARM: dts: msm: Add secure display heap configuration for ATOLL
+5388dc5b7cf0 msm: camera: isp: remove the check for bpp
+ccf8af271ebe diag: Free global buffer properly after receiving write done
+bde1baf18d85 msm: ipa3: Fix to recycle buffers
+bc979a53fa78 msm: defconfig: Disable IPA for sm6150 auto
+cf8207dc2ff2 drivers: gnss: Add SiRFStart GNSS chip power controls
+70f8c6332222 ARM: dts: msm: Add sdcard support for sa6155p vm
+efea50fdfaf2 msm: camera_v2: isp: Fix ub allocation logic
+86869ea16081 ARM: dts: msm: enable displayport hpd through lphw gpio
+c334419bd6c8 ARM: dts: msm: enable displayport driver for trinket
+884b0ec56971 msm: ais: fix issue for 4 cameras on lite IFE
+0acb99110f3f usb: core: Power up SS phy before handling port suspend
+aff90b7834d5 msm: ipa3: WA to handle of mhi prime channel start failure
+426392640796 ARM: dts: add hostless QUIN TDM config on sa6155 platform
+a3fdf9b3115a msm: kgsl: Use event workqueue for event work instead of RT Kthread worker
+a68238da0492 ARM: msm: dts: disable DP related device nodes
+8bee800ae11c ARM: msm: dts: remove unused DSI panel node
+6ae7f3f9d8b5 drm/msm/sde: fix null access for wb modes
+c9e1a17629b9 usb: Add support for 90fd PID
+691e2c876029 msm: camera: jpeg: Check the HW state before accessing register
+6a207f4abac9 clk: provider: cleanup of unused use_max_uV
+80386df9c15f clk: Always vote INT_MAX as maximum voltage for a rail
+00a66db7ff7c clk: qcom: sm8150: Remove usage of use_max_uV for voting
+ff0dcdcbbc1f msm: ais: support setting framedrop by io config
+0708e0efe315 msm: watchdog: Add hibernation support
+4803d1a3902c arm: io: add missing read and write no_log variants
+697185ee1436 ARM: dts: msm: Add cDSP, adsprpc, and fastrpc nodes to sdmshrike
+1702b2d6c69e pinctrl: qcom: Add direct connect configuration support for sdmshrike
+65d32c91e115 msm: IPA4: Enable MHI Proxy on msm-4.14 master branch
+b81c4927c9f1 NFC: Fix device node probing issue
+2dbba5a0ee4a ARM: dts: msm: Add a common device tree for VM platforms
+c400005042de dm: Restore reverted changes
+2ed8c2432b30 ARM: dts: qcom: Add device tree support for hsi2s driver
+428da9a154ff cnss2: Update WLAN composite USB I/F number for QCN7605
+7afc516711e6 soc: qcom: qdss_bridge: Get buffer num from mhi and enlarge buffer size
+5b46ee6785af mhi: core: change to vmalloc for memory allocations larger than 32KB
+cd8051d1f01e mhi: core: initialize MHI lpm_mutex before use
+5f26f1f7a0b5 mhi: core: avoid triggering SYSERR if device is already in RDDM
+a51c726ecfc0 mhi: cntrl: qcom: do not cache PCIe endpoint config space
+4bc592ecdc78 of: of_reserved_mem: Increase limit on number of regions
+da944666ad38 ARM: dts: msm: Update clock source for csi phy3 for sdmmagpie
+46cd55e3cdc0 ARM: dts: msm: Fix include files for SA8195p
+e0b8ba2d45c7 msm: IPA: add functional flag for MHI Proxy
+4ff5de1ac782 defconfig: QCS405: Enable USB diag_bridge, QRTR and RMNET host drivers
+2b088298bdc6 msm: camera: cpas: Avoid array underflow during client registration
+0b42271e1bfd drm/msm/sde: Correct initialization value for frame count
+d173c9107303 clk: qcom: Add clkref enable for PCIe and USB clkrefs
+17c63bd3a1be msm: kgsl: Change data type for GPU ib vote
+b9e210d42bc9 nl80211: Keep optional check for KCK in set rekey
+6dfa79826a90 defconfig: msm: enable XFRM_INTERFACE, MEMBARRIER for trinket
+ba995ab41f5f msm: adsprpc: change logging of rpmsg callback error message
+c270eb57dcd5 ARM: dts: msm: add cnss dt node for sa6155p vm
+042a43a7c568 ARM: dts: qcom: Add device tree support for hsi2s driver
+aa1bce1ff489 soc: qcom: hab: add error handling when dt item is missing
+843d07753d02 ARM: dts: msm: set QDSS channel num-elements as 128
+96d633371a25 Dm: init: Enable rootfs mount as dm-verity during boot without ramdisk
+69e13334a925 msm: vidc: add check to avoid out-of-buffer write
+d889c4d98e4c msm: IPA: uC debug stats correction for USB pipes
+02adef9dec9a drm/msm/dp: abort before going to suspend
+c0861ce0f521 msm: kgsl: Add missing check for snapshot IB dump
+affdf7b0e953 ARM: dts: msm: Unconfigure QUSB PHY tcsr_clamp_dig_n register for SA6155p
+44f40751ba98 clk: qcom: gcc: Add clocks for hsi2s driver
+b07e017947e3 clk: qcom: Support 'protected-clocks' property
+8819f223628c msm: camera: sensor: Add check to know if device acquired
+d4807257d40d cpu/hotplug: Abort disabling secondary CPUs if wakeup is pending
+7a3956a53957 msm: vidc: Avoid information leak while accessing the packet
+849f3f56fda9 defconfig: enable XFRM_INTERFACE and MEMBARRIER
+e15c73fe93c1 ARM: dts: msm: Enable dynamic clock switch feature for sdmmagpie
+7275584f1a3e ARM: dts: msm: Enable dynamic clock switch feature for sm6150
+9d091f0f5aae arm64/iommu: handle atomic pool addresses in ->get_sgtable and ->mmap
+b136fd5965cb arm64/iommu: handle non-remapped addresses in ->mmap and ->get_sgtable
+91c53c45333f ARM: dts: msm: Add ep delay workaround for sdxprairie
+d032791e373f ARM: dts: msm: Add VADC and ADC_TM support for atoll
+8adb9629951d msm: ipa3: add IOMMU_CACHE flag
+48d9665d791c soc: qcom: dfc: Purge packets on flow delete
+8798ed2c5a17 ARM: dts: msm: Add WLAN power pin definitions for sdmshrike
+368b28ac003b power: smb1390-psy: Support PPS constant current(CC) mode
+f7e86ee5998a power: smb5: Add support for PPS constant current(CC) mode
+051bf6d83fca clk: qcom: Update GCC driver for SDXPRAIRIE V2
+e2cce70fb6d9 ARM: dts: msm: Update GCC node for sdxprairie v2
+03604d4385c0 soc: qcom: qmi_interface: Remove ineffective mutex lock from txn struct
+3f41916cea25 soc: qcom: qmi_interface: use qmi txn_lock to avoid use after free of txn
+3c0f1d7f3a72 msm: isp: camera_v2: use vfe0 when dual_isp_sync enabled
+cd35d9b8c712 diag: Prevent using uninitialized mdlog session mask
+c7946a8f240e ARM: dts: msm: set LV GVM's vmid as 3 in multi-GVMs model
+6ade4aa6f951 defconfig: msm: Enable KPTI on sdmsteppe, trinket
+937c1f6639a4 power: battery: smb5-lib: Introduce FCC Main Votable
+983dae0530c2 defconfig: msm: Enable KPTI on sa8155, sm8150
+c5e6acd01672 i2c: virtio: reallocate memory for each msg buffer
+add5ec7a2035 msm: ipa3: Fix RNDIS Tethering Stats update for UDP UL
+6c254244628c net: qualcomm: rmnet: Use header lengths in descriptor segmentation
+d0ecb4b79e8d msm: kgsl: Change throttling counter weight from 15% to 5%
+6c2d12efae48 ARM: dts: msm: Add calypso CAN controller support for the SA8195 target
+fe9d28a2b8ee drm/msm/dp: limit the max supported dp resolution
+8d9dae7ae99f ARM: dts: msm: add hdisplay and vdisplay for max resolution on sm6150
+19406ab126bd msm: ipa: Update IPA SRAM mapping
+7167b0db46a4 ARM: dts: msm: delete pm8150b nodes from mtp cpe dts file
+8b575a30ff77 ARM: dts: add pinctrl handle in snd card on 6155 platform
+9ac5f3cf60df mm: swap: Add randomization check for swapon/off calls
+696fe91745ad block: gendisk: Add a new flag in gendisk structure
+ffd32d2bafa6 PM: Hibernate: Add option to disable disk offset randomization
+4f5d9fa7cf91 msm: vidc: Add checks to avoid OOB access
+51a402fdb208 soc: qcom: hab: use spin_lock/unlock() when local irqs are disabled
+158372aa9c33 defconfig: sa6155: Enable CONFIG_DEVTMPFS
+5fc964ccb35a msm: camera: isp: Enabling critical logs to improve debugging
+63d9b00c5265 i2c: virtio:refine the driver of i2c virtualization
+6e43858553b9 drm/msm/dp: assert phy reset before phy mode switch on trinket
+f32f3c9ff468 drm/msm/dp: fix error handling conditions in lphw hpd
+1253a2aca1ba disp: msm: sde: add SSPP CP features to dirty list during IPC
+0e9a5f598216 msm: IPA : Tethering offload clean up on MHI PRIME
+ccc1aa6aa061 ARM: dts: msm: Add early mount partition details for atoll
+f561a0ebfb3f msm: ipa3: Drop WAN TX packets when pipe is down in ssr
+c1bbcf80a1ba ARM: dts: msm: update audio node and pinctrl on 615x platform
+1e97cd170372 ARM: dts: add pinctrl handle in snd card on 8155 platform
+51c4d9f6442e ARM: dts: msm: Add TSPP pin definitions for sdmshrike
+e06ef8ea48e5 esoc: Add mdm error-fatal notifier hook
+53547d502a4a net: qualcomm: rmnet: DL marker v2 for frags
+8379d07562f4 drm:msm: Update msm driver to allow async suspend / resume callbacks
+e820d6f61c59 msm: vidc: add additional check to avoid out of bound access
+601c3460d143 defconfig: msm: Enable support for sdhci in qti-quin-gvm
+e965eef4c370 diag: Update diag get log request structure
+57254179bed9 usb: dwc3-msm: Program MSB of doorbell register when using dummy_addr
+7cb776fe4176 drm/msm/sde: avoid connector state mode update in commit thread
+64919e5bb6d6 clk: qcom: Add sa6155 sdhci support for virtual clock
+a7a7037b04db USB: configfs: Send DISCONNECT uevent during UDC bind
+6a6b14509288 msm: camera: Add IR-LED and IR-cut filter driver
+44fccfd17f43 iommu: iommu-debug: Add support for page table dump
+7674e8f6a77e usb: f_gsi: Don't enable IPA data path if connect channel fails
+f8f02a449021 dt-bindings: clk: Introduce 'protected-clocks' property
+157161d9162c Revert "msm: camera: Skip cache CPU SYNC for non-secure buffers"
+0816b2876e90 ARM: dts: msm: Add initial idp support for atoll
+d8454870feb1 pinctrl: qcom: Update offsets on the SOUTH tile for the sdmshrike target
+8fe87370078d msm: Fix UCHE to GMEM VA align and SVM base addr
+7cd9c57c0edc net: qualcomm: rmnet: Dl marker v2 callbacks
+95817dd5aeec net: qualcomm: rmnet: Add headroom for all skbs queued to stack
+65e6fa5cbf17 msm: ipa: Change qtimer gran_2 resolution to 1ms
+5f84f4ada195 msm: mink: handle interrupt while waiting for cb response
+296af98c53d1 ARM: dts: msm: Remove s1 bypass for atoll
+b95f2ce74546 sched/fair: Prevent tick path active migration to the same CPU
+f63596bf70de mm-camera2:isp2: Remove the lock during the stream config
+3ae54832749d ARM: dts: msm: Add pcie0 for sa6155p vm
+742e2dd3c09a msm: kgsl: Improve GMU firmware loading time
+5cc2fd9f7ab7 power_supply: Add properties to support PPS constant current(CC) mode
+111c3ba044d1 msm: ipa: Save GSI 2.0 test bus information
+e59be603bce2 ARM: dts: msm: Add soundcard device node in sdxprairie dtsi files
+99c425ab5f3f ARM: dts: msm: enable sim panel on QRD
+9831fedf9eb5 ARM: msm: dts: Add reset clocks for sm8150
+b632009cc386 ARM: dts: msm: fix compile warning related to mhi node
+7e442017a740 esoc: Change the toggle delay for external modem.
+7972301a4046 msm: ais: Fastforward ais to camera PC386
+ee75dcd35e47 scsi:ufs: Allow ICE calls for UFS_STORAGE type
+fc1343a0ff5d msm: camera: core: Fix context release timing issue
+4e92aa2594ab cnss2: Sanity check plat_priv before using
+912c0464572c iommu/io-pgtable-arm: sync map update before page table walk
+3629393ab0c7 diag: dci: Correct out of bounds check in processing dci pkt rsp
+837a1c17db9c ext4: allow move extents ioctl for HW FBE
+b5a43306289a drm: msm: Do not check for 0 mixer count
+121fd71fe0c3 mhi: cntrl: qcom: disable pcie low power mode during bw scaling
+83e904981458 mhi: cntrl: add support for advanced power management featues
+ca08bf77af18 msm: IPA: uC debug stats channel update
+06c8d20c27df msm: IPA: uC debug stats for MHIP and USB
+80af187c8bcd udp: Avoid post-GRO UDP checksum recalculation
+74b22b6a0174 irqchip: pdc: Iterate for actual available pdc regs during hibernation
+2e12f31b217d msm: camera: isp: Halt device with the command parsed
+5487daabfa7c clk: qcom: Add sa6155 pcie support for virtual clock
+1fe3affc4e4b ARM: dts: msm: add hostless QUIN TDM configuration
+e55b7ac8005a msm: camera: Increase CCI timeout
+2d5cf9e37e35 net: phy: Fix WOL in Micrel phy
+8b897f184a7a power: step-chg-jeita: update jeita/step ranges to support signed threshold
+4604fd9d494c ARM: dts: msm: Enable NVMe device on sa8155 adp star
+aaba47a049a9 Revert "diag: Clear memory device entries during mhi disconnect"
+fc2cb62d662c mhi: core: mark MHI interrupts as IRQF_NO_SUSPEND
+df513284c667 net: qualcomm: rmnet: Introduce descriptor framework
+9615d8065aec ARM: dts: Use svs bus voting with USB on sdxprairie
+0c9477785ec1 dwc3-msm: Add default-bus-vote property to select default USB bus voting
+b5e62ef44605 mhi: core: add support for silent suspend and resume
+5dd20fd01ecf msm: IPA: remove the redundent if-else check
+7b1467216c6c defconfig: Adding support for EXT4 filesystem
+5c8e8fc3b1eb mtd: msm_qpic_nand: Add support for performance stats
+c99fc13d74fa slim-msm-ngd: Create a IPC error logging file
+512b344bc64b msm: ais: identify the ife lite
+b790b1452963 phy: qcom-ufs-qmp-v3-660: increase the minimum time in hibernate
+4234fa74fdda serial: msm_geni_serial: Double clock-divider for kona based hw
+b8087aaab893 ARM: dts: msm: Update quiet-therm thermal zone polling_delay for TRINKET
+30fe760074b5 mhi: cntrl: qcom: save POR PCIe link speed during probe
+577b474ede73 pci: framework: disable auto suspend link
+5d28d8917800 mhi: cntrl: add support to dynamically change bandwidth scale
+e5971af7ba53 mhi: core: add support for dynamic bandwidth scaling
+6629e7f20b1c ARM: dts: msm: Add coresight nodes for atoll
+3d6b54dc41d2 ARM: dts: Add UFS device node for atoll
+41d4fbffacd9 msm: camera_v2: isp: Reserve rdi ub based on image size
+4766872a374c defconfig: msm: Enable required configurations for sa6155
+45c5575e570a Revert "drm/msm/sde: fix crtc enable check"
+4c9b36af9cf2 msm: ipa3: Handle missing cleanup in IMP_READY state on shutdown
+f9602119cfc5 msm: kgsl: check if state change to suspend succeeds
+5c615071d972 ARM: dts: msm: Add emmc and sdcard device node for atoll
+7283e70f30c4 msm: camera: isp: Buffer size validation at IFE
+08641a16018f ARM: dts: msm: Add new nodes for triple camera for sm6150
+ff9515b80651 fbdev: msm: check the length of the external input buffer properly
+8f2bcb7ba2b1 ARM: dts: msm: move cnss related nodes to board device tree for sa6155
+3df8bc043f3c diag: Prevent switching mode for non mdlog process
+3b4e4233f7c7 ARM: dts: msm: move cnss related nodes to board specific tree for sa8155
+2a4070877a24 msm: vidc: avoid bug on during noc error
+8a9b76759849 drm/msm/sde: avoid unnecessary logs while dumping debug information
+91e04bf005c8 ARM: dts: msm: Add clocks and regulators to gpu cti for trinket
+6d9712c59a49 Coresight-cti: add support to enable/disable multiple clks and regulators
+210bff9579c5 ARM: dts: msm: keep UFS phy regulator always on for SM6150
+cc8090ec9fb1 ARM: dts: msm: Add adsp pil node for atoll
+87c3311e3862 ARM: dts: msm: Add cdsp pil node for atoll
+64734b52c803 ARM: dts: msm: Add modem pil node for atoll
+c197c98c6e2b scsi: ufs: update VCCQ and VCCQ2 min value
+19ea40dfc90e ARM: dts: msm: Set mdss-dsi-ext-bridge for all bridge used devices
+b94ce946954b ARM: dts: msm: Add USB PHY AC pin definitions for sdmshrike
+0ae8ff771207 drm/msm/dsi-staging: Add a new bridge DTS property support
+899e1b2f0ef6 usb: misc: nb7vpq904m: fix possible array overflow
+13ea642ee12a iommu: arm-smmu: Remove check for hibernation and secure use case
+32c33983e333 defconfig: Enable hibernation feature for sa8155
+ad5d6ae46b6b ARM: dts: msm: Enable virtio clock for sa8155 vm
+dc5ad43a2ef1 defconfig: msm: Enable virtio clock for QTI Quin GVM
+659b65868bbe ARM: dts: msm: Add PM6150 and PM6150L peripherals for atoll
+43aecbfea731 net: qualcomm: rmnet: Fix skb->csum_start value
+a24b0402d911 msm: ipa: set the property for caching the entries in IOMMU
+928a94d48fa1 ARM: dts: msm: Update GPU power levels for SA6155
+007678f2e7e3 soc: qcom: pil: Increase max number of PIL descriptors
+d30a2e82c247 msm: ipa3: embellish access control policy algorithm
+e99b1eb704dd usb: dwc3: Flush bh work before disabling dwc3_irq
+3e67fd937435 ARM: dts: msm: add support for controlling LGA power for bt module
+90224a39434e msm: ipa4: fix to increment IPA clock vote count after enabling clock
+0c1add55e598 msm: camera: isp: Update the context hw events dump
+866061a12d16 ARM: dts: msm: Fix kernel warning for sm8150
+78cdf84b4622 msm: adsprpc: Fix integer overflow in refcount of map
+22b8ccbee926 arm: dts: msm: Add QSEECom nodes for SA6155P virtual machine
+3b48381f5975 power: qpnp-qg: Add range checks to FIFO length
+3165ec3338fa i2c: add virtual i2c driver
+c978ad3a8b37 clk: qcom: Add virtio clock driver
+1f48df32f43f msm: ipa: Write to HOLB_EN twice for IPA 4.5
+52152018baf2 msm: vidc: Add support for hibernation
+5c2503ad76d8 drm/msm/dsi: Update incorrect DSC V1.1 8bpp 8bpc min qp values
+eb380dffb176 usb: dwc3-msm: Use dummy buffer as doorbell until GSI is ready
+87a732c86e91 msm: npu: Only allow to execute patched network
+bd8e9fb3bec4 ARM: dts: msm: Add CNSS pin definitions for sdmshrike
+6e4bb1a37af3 msm: camera: sensor: Increase the eeprom map buffer count
+7ff35010bfef msm: camera_v2: isp: mark error print to debug
+6b4f257a735b msm: ep_pcie: Enable edma only if the controller is up
+b5add91c1be9 dt-bindings: qcom: clocks: Add SDXPRAIRIE V2 clock bindings
+3e9202c19a8a msm: vidc: refine clock calculation for both encoder and decoder
+3091c72189ed ARM: dts: msm: Add QUPV3 SE dt nodes for debug uart on atoll
+6bc440d8d015 msm: camera: reqmgr: Reset previous skipped slot if valid request
+089ca2b9e66c ARM: dts: msm: Enable NVMe device support
+efad955f38c8 Revert "msm: kgsl: Call dma_buf_unmap_attachment() early"
+3362b949b9cc ARM: dts: msm: Add dtsi entries of USB for ATOLL
+762ad0178ff1 ARM: dts: msm: Disable PCIe l0s low power mode for QCS405
+dfbfc89943d8 ARM: dts: msm: Enable PCIe PHY powerdown for QCS405
+bfcaabff4ae1 msm: pcie: Add support to powerdown PCIe PHY in probe
+d51cd6f42494 defconfig: Enable NVME driver
+b902bf6999db clk: qcom: gcc-sm8150: Add clock asynchronous resets to BCRs
+02fbd6a6c5bb ARM: dts: msm: Add support for CPE on sdxprairie
+3f78593bdee0 power: smb5-lib: set DCP ICL based on Rp value
+33e4ee21229e power: smb5: Fix a possible reverse boost
+d8b8dab440a6 msm: IPA: warn for MHI Prime clock vote/unvote mismatch
+ccc5e484dc12 esoc: Convert the boot fail configurations to IOCTLs
+63b496bd853c defconfig: sdxprairie: Enable AQC IPA offload driver
+0f39dc7fd4ce msm: ipa: Add support for memory allocator in offload sub-system
+b741b1ab8ea4 defconfig: sdxprairie: Disable AQC IPA offload driver
+2e7632df8f65 msm: ipa: Fix kconfig dependency for AQC offload driver
+85d278bd4eed drm/msm/sde: Prevent modeset resource management on encoders in off state
+5588888870f4 dtsi: add ipa_pm exception list
+fadbb3cebe5f ARM: dts: msm: Add io-expander pins for audio daughter card on 8195
+44f331a21798 msm: kgsl: Redo adreno governor tz init after hibernation
+15b2a5428b4f msm: kgsl: Avoid unnecessary GMU reinitialization
+38145572bbc7 msm: kgsl: hyp assign secure pages to HLOS during hibernation
+68b09de06759 msm: npu: Limit one client to load network
+3335887cbac2 msm: npu: update performance mode during load network
+c29e837f1b25 msm: npu: Allow user app to retrieve NPU version via get_property
+59eb231e577d msm: kgsl: Enable SMMU programming in TZ after hibernation
+b78f84d1ff5c msm: kgsl: clear GMU flags before hibernation
+be7b93d83489 msm: kgsl: unload/reload zap shader
+f018583f5d72 ARM: dts: msm: Add DTSi entry for IRLED for QCS610
+b0ecf1dc0c7e soc: qcom: scm_qcpe: Fix support to scm_call2_atomic
+eb1fd5a88aae ARM: dts: msm: Do not modify the pm8008 voltages for trinket
+11441d2a2ead Revert "cnss2: Prevent vote for MHI wake after device error"
+a4369515b09c msm: IPA: stop ODL GSI channel when PC happens
+db26814565ea msm: ipa: Reset GSI channel before gsi_dealloc_channel() call
+9089218741d3 net: aquantia: Re-initialize fwd rings on driver resume
+33c1cdcbfee1 net: aquantia: Save PCI config space during suspend callback
+4731adbcf8c3 dt-bindings: Add a new extern bridge config
+d28916a51c34 ARM: dts: msm: Update the MHI configuration for Genoa
+778119409768 ARM: dts: msm: Add ipcb tgu node for sdxprairie
+4ee99b1a6ded mhi: core: get bhie offset from devicetree node
+abd91337f829 mhi: core: add support for dynamic execution environment (EE)
+232dbe5e182a cnss2: Prevent vote for MHI wake after device error
+5a1592fd9c53 icnss: Register to ESOC power off notification
+f12faf29f78f ARM: dts: msm: Add the sensors AHB node for sdmshrike
+3fa23ee543b7 drm/msm/dp: add lane map support for sm8150
+cbf5206d4a97 msm: ipa3: support ipa clk scaling for pcie modem
+2d0a1ff7b7f8 diag: Add memory device support for multiple devices
+ffa2a297e9ed msm: kgsl: Don't free memory if locking failed with error EADDRNOTAVAIL
+a5535f61eea7 ARM: dts: msm: Disable tpdm gpu for sdmmagpie
+14a93c983476 ARM: dts: msm: Update AQC moderation for peak throughput
+40d18910ca9c msm: vidc: Reset AXI CBCR register during hardware hung
+fcb756335109 soc: qcom: mem-offline: Check return value from mbox_send_msg properly
+740606efdd20 ARM: dts: msm: Correct the mnt flags for trinket
+c4a67effeb3e msm: camera: crm: Increasing the device handles to 128
+dbf3709f0ba2 ARM: dts: msm: Disable RSC mailbox controller device display
+e1cf8dfcfa01 power: qpnp-smb5: Do not use ibatt based termination for QG PMICs
+781c7ae0225b msm: camera: smmu: Set smmu non fatal flag true
+1b12328300bf Arm: dts: Add energy costs for Atoll
+b1beed57e76a msm: camera: Send topology and stream status to TZ
+6485a60c1ef2 pinctrl: qcom: Add direct connect configuration for atoll
+a6b2a939451f ARM: dts: msm: Add CommandDB device bindings for atoll
+99383cd7a0d8 ARM: dts: msm: add system PM device binding for atoll
+a52c17d7e5ae ARM: dts: msm: Add RSC mailbox controller device nodes for atoll
+4eaf7e5cf320 msm: phy: Add WOL functions in micrel driver
+5e45e500c274 msm: adsprpc: Add error handling checks
+21690279bf48 msm: camera: Adding device type to track device handles
+3b0c9e07aca2 msm: camera: isp: Add support for initial frame drop
+960d29bbd6bf drm/msm/sde: Add AD4 memory range to valid range
+392a07a7f322 drm/msm/sde: Add AD4 memory range to valid range
+c534fa55094c esoc: Introduce stage-3 reset under boot fail action
+4d43754db02f drm/bridge: increase anx7625 delay after power on
+8c27b12c6bc8 drm/bridge: check bridge power status before initialization
+5d7259610c90 msm: kgsl: Ensure that thermal power level restrictions are enforced
+6c57dd0a48c3 Revert "defconfig: sm8150: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag"
+29459dbb1277 ARM: dts: msm: EMAC changes for QCS610 platform
+0d99716c7f8d defconfig: qcs405: enable MHI host stack for qcs405
+3e5ef5ab7404 ARM: dts: msm: Disable TCSR PERST for sa8155p
+b6399d242025 qcom_geni_se: Add a check in QUP common driver to vote for BW
+83ee62aa6920 ARM: dts: msm: Add PDC interrupt controller for atoll
+54862ee56a6d msm: kgsl: Add GPU_RBBM_GBIF_CLIENT_QOS_CNTL to powerup register list
+aaa3cbba7c31 drivers: irqchip: qcom: Add PDC pin data for atoll
+bfb5cbbffca5 ARM: dts: msm: Enable QG ADC ibat scaling factor for PMI632 BCL
+e0e0efe69556 drivers: bcl_pmic5: Add ibat scaling factor support for ibat conversion
+1efa9848fdbe ARM: dts: msm: Increasing shared mem region size for SM6150 and sdmmagpie
+19f5a7752484 msm: ep_pcie: Update enablement for TCSR PERST
+1966223222c2 defconfig: Disable USER HELPHER Fallback for QCS405
+f39d4673cc7b ARM: dts: qcom: Update sec_mi2s gpio pinctrl for sdxprairie
+5fcc58b1bd54 msm: camera: icp: Prevent out of bound access in acquire
+1824ac8ea80f msm: camera: mem: Mutex before cpu_begin_access & cpu_end_access
+de0cfd861439 msm: camera: mem: print error value
+f591118b1ccc msm: camera: cpas: Check the HW state before accessing register
+6c234654a9d2 ARM: dts: msm: Correct camera sensor MCLK frequency for QCS610
+d034837d1d53 msm: ipa: Tune IPA EP configuarion to match updated design
+d72389893771 msm: IPA: uC debug stats for gsi offloading protocols
+d4e45e4a8891 msm: ipa: add IPA hw stats for PCIE modem
+c3486a05cbf2 power: pmic-voter: Add API to override votes
+0a9d3dfb5903 ARM: dts: msm: Add device tree support for sdxprairie v2
+95200df2d31c ARM: dts: msm: Shutdown the external-mdm before the internal
+60e77a6a1d77 esoc: Move the esoc client hooks' definitions from uapi header
+cc93b6efb2d9 power:hibernate: KPI marker for Hibernation Success
+1e5d330a3870 soc: qcom: boot_stats: Enable marker for atomic context.
+d3cb155e844b msm: Configure UCHE GMEM base address based on GMEM size
+30e704ba02b4 cnss2: Use token argument instead of dev in SMMU fault handler
+5c298933b231 net: qualcomm: rmnet: Add new rmnet_perf ingress hook
+0f64100456af mhi: core: allow clients to independently disable bus or device lpm
+c17db3567020 soc: qcom: ssr: Add dependency hooks for subsystem power operations
+005c3a05b41c spi: spi-geni-qcom: Allow MISO<->MOSI connectivity for slave pins
+f14e658e3c47 ARM: dts: msm: configure DT to support dual Charge Pumps
+2013c60e6a14 power: smb1390-psy: Add support for SMB1390 SW Initialization
+36870a2303b2 Arm: dts: Add a dt node for QUP to vote for actual Band width
+438cab78c62e soc: qcom: qmi_interface: Release mutex lock before return
+25674241092b scsi: ufs-qcom: add freeze-restore callback
+0a4e76630d08 scsi: ufs: Add freeze and restore callbacks
+1df24233278e nvme: smmu support via devicetree
+6f58caae2191 sched: fair: Add strict skip buddy support
+9941946c1008 coresight: tpdm: Add sysfs to control timestamp for each MCMB frame
+8a44b1c328c3 drm/msm/dp: fix for mvid/nvid zero on sm6150 dp mst
+6aa2beaad9d1 msm: npu: Support enable/disable NPU via set_property
+235b36e4ff0f msm: ipa: enable mhi prime manager for perf images
+99d87c60a0d0 arm64: hibernate: Introduce new entry point to kernel
+9179ec484c1c devfreq: check return value of operating point property
+698c065934f7 atlantic-forwarding driver v1.0.19
+5121b211a5e6 net: qrtr: Use skb with fragments in memory failure case
+afe0cb8ced98 ARM: msm: dts: disable USB Type-C analog audio switch for QCS610
+1d59d5c8a276 diag: Handle event enable command properly
+de9c922c344b usb: dwc3-msm: Ensure reset if h/w is out of lpm without any events
+f7a4777b3d99 msm: camera: isp: process RDI regupdate from each ISP
+a89291132fd4 msm: camera: jpegdma: Added missing lock for dqbuf and streamon
+651326e25fee mailbox: qcom-rpmh: Add hibernation support
+10f472db5748 irqchip: qcom: pdc: Add hibernation support
+936729b7cf01 ARM: dts: msm: Update sa615-vm device tree for audio
+7fce88c3862d cnss2: Load firmware image based on WLAN device version
+d538e8cc12a7 sched/fair: Avoid force newly idle load balance if have iowait task
+1cfaf527a42c msm: camera: cci: Add rd_done to handle read done operation
+18ee9eb9cd08 msm: msi: add support for Snyopsys MSI IRQ mask/unmask and enable/disable
+28f069bcf6ef msm: msi: add hooks for MSI enable/disable
+dc23ed420c69 mhi: core: always setup/teardown irq during power on/off transitions
+b6950744ae1b msm: ipa3: add qmi support for clk voting
+dca9b5d2a35d msm: ipa: feature wrap MHI Prime panic handler
+c9d273de9ada msm: ipa: resume MHI Prime pipes for USB resume
+a1c0d8a92435 dt-bindings: qpnp-fg-gen4: Add SW ESR control
+b3aec823bde5 power_supply: Add POWER_SUPPLY_PROP_ESR_SW_CONTROL property
+7c36a662c7c8 net: qualcomm: rmnet: Avoid unnecessary RSB/RSC SKB allocation
+c025ac3812f7 net: qualcomm: rmnet: Move headers to linear SKB section
+2d02277fe204 net: qualcomm: rmnet: Segmentation cleanup
+0d8333206570 defconfig: msm: Enable f2fs encryption and dm-bow on SM8150
+0d0636de9892 power: smb1390-psy: Add support for dual charge Pumps
+a3d57b298844 ARM: dts: msm: Enable low power modes for auto
+58019653033c ARM: dts: msm: Add IPA device configuration for atoll
+e91fc0f8d47e ARM: dts: msm: Add PWM1 and GPIO6 configuration for QCS610
+29fcc27e932b power_supply: Add CP_ISNS_SLAVE power supply property
+fd106c5c0610 dt-bindings: smb1390-psy: Add property to support dual charge pumps
+a8fd28c30694 msm: kgsl: Remove unused kgsl_dump_fence() function
+3937dc1e388b cpufreq: schedutil: Fix the incorrect average capacity calculation
+af94d14c7cdf mhi: core: parse MHI controller version during MHI registration
+7609d9e2ef6f mhi: cntrl: qcom: temporarily disable MHI suspend
+2000f19da2cc mhi: core: add support to ring doorbell (DB) in any active MHI state
+1d824f859d47 mhi: controller: qcom: add a boot monitor
+179aa43411a1 msm: kgsl: Correct snapshot over-write policy
+2537e5e50cf5 power: qpnp-fg-gen4: Use dynamically allocated buffer for SRAM dump
+c720a1423625 ARM: dts: msm: Add early ethernet flag
+53a55fb72a89 msm: camera: eeprom: Fix OOB read/write in EEPROM
+720fdba3ddd6 clk: qcom: Update parent of gpu_cc_cx_gfx3d_clk for Trinket
+10d45d06e60b clk: qcom: Add HALT_DELAY for gpu_cc_cx_gfx3d_clk for SM6150
+f0a97171bde1 ARM: dts: msm: add SDAM peripheral to charger node for PM6150
+2075acd60b27 clk: qcom: Add HALT_DELAY for camera_ahb_clk for TRINKET
+cce2bb3a6c6f ARM: dts: msm: Initial dts for sdxprairie mtp dsda platform
+691da06c26f2 drm/msm/dp: Add flag to notify peer_usb_comm support to dp
+d39b55ff7f4b msm: mhi_dev: Add wait when write requests are exhausted
+700656d8ae0d msm: ais: fix frame based mode
+065aca9edc52 msm: ipa: Enable deaggregation for MHIP DL pipe
+65f106856bab ARM: dts: msm: Add qfprom node for SA6155 and SA6155P
+3ef647eb72f7 power: smb5: add support to handle pulse skip interrupt
+7457814fa823 Slimbus: Remove the mutex_unlock which is not necessary
+98a07acd5dac ashmem: switch to ->read_iter
+e95e6e133f18 ARM: dts: msm: update to memory map v6 for QCS405/QCS403
+dbb5cc6cafad ARM: dts: msm: add regulators in Bluetooth node for SA6155p
+3e9a3e0d11bc Bluetooth: add support for controlling regulator s5a for hastings
+2cf1b502bb95 msm: camera: crm: Increase the device handles to 128
+bca410086067 defconfig: qcs405: Enable ath10k pci driver for besera
+cd714e4852f5 msm: ipa3: Fix to avoid deadlock during USB connect
+3a431fcfddd6 defconfig: sa6155: Enable QFPROM driver for SA6155
+cda7a344089e msm: npu: Support MSM_NPU_GET_PROP and update DCVS mode
+e89766ade97e msm: ais: fix 8x camera work simultaneously issue
+1a7605c49ddb defconfig: Enanle cpufreq_times config to log cpu freq stats.
+230419527efc power: smb1390/battery: update ILIM configuration logic
+0fd9020029b0 dt-bindings: smb1390-charger-psy: add property to specify output topology
+c549c6bd745d drm/bridge: Add power management for LT9611
+1b525a8a73bb msm: ipa: Add check for NULL pointer reference
+278242109e67 msm: ais: enable ife line mode
+e52a7c1cb918 memcg, oom: move out_of_memory back to the charge path
+7143844499e0 msm: vidc: ensure vidc instance is valid before using
+27b21235e096 msm: pcie: add support for L1ss timeout
+b45b95d65b06 msm: pcie: add support for client to control link width and speed
+940ef1ab8bf3 msm: pcie: add LTSSM definitions
+4d775e8c7502 PCI: Add PCI_EXP_LNKCTL2_TLS* macros
+5992e8d61d82 ARM: dts: Add MHI for wlan on GVM
+66906020e102 mhi: cntrl: qcom: store PCIe BAR address in controller structure
+ef96dfeac326 mhi: core: add base address field for MHI controller
+a49f336e0d4f mhi: core: update event ID for bidirectional channels
+5b656e8f807c ARM: dts: msm: change QUAT/QUIN TDM clk to 24MHz
+8de81739c3a2 drivers: pinctrl: sdmshrike: Add EMAC PPS pinctrl function
+18c52c0a4a1f msm: ipa3: Fix to memory allocation failure
+d8bb023f70ad ARM: dts: msm: Apply ratiometric calibration for bat_id on PM6150
+99c21ed97ef4 power: smb5-lib: generate power supply event for PD current change
+55ed9c8f41e3 power_supply: add properties to report parallel connection topology
+dab5fa2bb3d7 sched/core: Improve CPU hotplug latency for rcu_expedited=1 case
+8b1379d68b50 sound: usb: Add return value to debug log
+be70dc5f0fd3 ARM: dts: Set USB bus voting to nominal on sdxprairie
+8479a09303b7 defconfig: arm: Enable USB electrical and link test support on sdxprairie
+a9ca184fe9f0 disp: msm: sde: avoid rc lock deadlock during esd failure
+009ecbdf04a8 msm: ipa3: adjust macros to correctly fill arrays
+04faeba9dd8b NFC: Keep VEN gpio always high from boot
+e815635adda3 usb: phy: qusb: Enable regulators in cable connect case
+7b004b4ce0aa msm: ipa3: Fix to validate check for IP type
+ec62342c8b8a ARM: dts: msm: Add slew rate values for trinket
+06a383eb537d net: sockev: avoid races between sockev and socket_close
+2934df25ef5d Revert "qseecom: fix a request_firmware issue"
+fcce8b3d5ef1 msm: camera_v2: isp: Fix raw stream issue in dual_isp_sync mode
+2fa7962a26e9 coresight: hwevent: Add support of empty mux register list
+724b1b8ef2ca msm: camera: fd: Remove duplicate "qcom,fd501" property
+a20c9eb7ad66 coresight: funnel: add support for multiple output ports
+a5d24f6231c3 drm/msm/sde: disable write operation on eventlog dump node
+59b129d7f827 msm: ipa3: add support on mhi-prime
+a8651925a49d msm: ep_pcie: Update reset initialization
+39aad575466e msm: kgsl: Add per context fault properties
+0c7f3e85b9df ARM: dts: msm: Update MSI interrupts for sa6155
+f2cab2229b4b ARM: dts: msm: Add device tree for SA8195 virtual machine
+9a55c24c27f4 drm/msm/dsi-staging: fix incorrect handling of backlight config failures
+835cdfa53ce2 msm: camera: reqmgr: Fix CRM shift one req issue
+6e43f96a8d47 msm: camera_v2: CPP AXI reset at close
+20bd9b087abf drm/msm/dp: perform mst phy operations during suspend resume
+c2c84792605d drm/msm/sde: add null check for current master
+4835252d4c0f msm: camera: icp: Mapping fw error numbers with error names
+e9ce612b0c06 esoc: Call the PON and POFF hooks with bit-masked flags
+06601a323c07 msm: kgsl: allocate user_ctxt_record based on preemption feature flag
+4b7d967d9718 msm: camera: isp: Prevent out of bounds read
+cb79ed061de0 msm: camera: Add uapi changes for axi bw voting v2
+7bcb7ff1763c defconfig: disable DSI parser for sa6155
+8455b4b55c4f msm: camera: sync: Dump fence info in case of fence exhaust
+d01046082139 diag: Replace mutex with spinlock for synchronization
+f61c08918816 ARM: dts: msm: Add MSM PCIe bus driver device nodes for QCS405
+b02a5a3a85e3 msm: pcie: Add PCIe controller support for QCS405
+1cccda7b224e ARM: dts: msm: Add qfprom node for SA8155
+0e9c23b6e96f defconfig: sa8155: Enable QFPROM driver for SA8155
+ab41db0e3663 defconfig: sm8150: Disable BUILD_ARM64_APPENDED_DTB_IMAGE flag
+08702ba0343a clk: qcom: add round_rate support for virtual clock
+1e6b38b163e2 diag: Reallocate dci buffer with proper required capacity
+09cd87dab234 msm: camera: isp: Handle Dual VFE incase of event mismatch
+58ab6e8c44d9 msm: camera: csiphy: correct DPHY bring up sequence
+465569643e8d msm:camera: avoid remap logic for RDI path
+8e354d37a8e3 drm/msm/dsi-staging: fix buffer overflow errors
+8248e21bce06 msm: camera: icp: Get GDSC control prior to IPE/BPS reset
+43903cb64a16 msm: kgsl: Access dma_buf_attachment pointer only if its valid
+c9d8c3c9907c msm: ipa3: Assert device if EOB interrupt received on WAN consumer pipe
+d2972ecf553b drm: squash changes for drm lease from upstream
+ba47ee1c80e6 drm/msm/sde: fix crtc enable check
+9aaf796019b7 msm: camera: Fix cpas axi clk rate overflow
+e6222ba1f95d msm: camera: reqmgr: Skip reset if no request from UMD
+54bbf065192e drm/msm/dsi-staging: add NULL check before pointer dereference
+c1658e57c5ed sched/fair: Check env src_grp_nr_running for active load balance
+d58c72910a05 sched/fair: Allow load bigger task load balance when nr_running is 2
