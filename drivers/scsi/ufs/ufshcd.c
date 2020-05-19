@@ -3538,7 +3538,7 @@ static int ufshcd_query_flag_retry(struct ufs_hba *hba,
 
 	for (retries = 0; retries < QUERY_REQ_RETRIES; retries++) {
 		ret = ufshcd_query_flag(hba, opcode, idn, flag_res);
-		if (ret)
+		if (ret && ret != -ENODEV)
 			dev_dbg(hba->dev,
 				"%s: failed with error %d, retries %d\n",
 				__func__, ret, retries);
@@ -3572,6 +3572,9 @@ int ufshcd_query_flag(struct ufs_hba *hba, enum query_opcode opcode,
 	bool has_read_lock = false;
 
 	BUG_ON(!hba);
+
+	if (ufshcd_is_shutdown_ongoing(hba))
+		return -ENODEV;
 
 	ufshcd_hold_all(hba);
 	if (!ufshcd_is_shutdown_ongoing(hba) && !ufshcd_eh_in_progress(hba)) {
@@ -3648,6 +3651,9 @@ int ufshcd_query_attr(struct ufs_hba *hba, enum query_opcode opcode,
 	bool has_read_lock = false;
 
 	BUG_ON(!hba);
+
+	if (ufshcd_is_shutdown_ongoing(hba))
+		return -ENODEV;
 
 	ufshcd_hold_all(hba);
 	if (!attr_val) {
@@ -3730,7 +3736,7 @@ static int ufshcd_query_attr_retry(struct ufs_hba *hba,
 	 for (retries = QUERY_REQ_RETRIES; retries > 0; retries--) {
 		ret = ufshcd_query_attr(hba, opcode, idn, index,
 						selector, attr_val);
-		if (ret)
+		if (ret && ret != -ENODEV)
 			dev_dbg(hba->dev, "%s: failed with error %d, retries %d\n",
 				__func__, ret, retries);
 		else
@@ -3754,6 +3760,9 @@ static int __ufshcd_query_descriptor(struct ufs_hba *hba,
 	bool has_read_lock = false;
 
 	BUG_ON(!hba);
+
+	if (ufshcd_is_shutdown_ongoing(hba))
+		return -ENODEV;
 
 	ufshcd_hold_all(hba);
 	if (!desc_buf) {
@@ -3845,7 +3854,7 @@ int ufshcd_query_descriptor(struct ufs_hba *hba,
 			err = __ufshcd_query_descriptor(hba, opcode, idn, index,
 						selector, desc_buf, buf_len);
 		up_read(&hba->query_lock);
-		if (!err || err == -EINVAL)
+		if (!err || err == -EINVAL || err == -ENODEV)
 			break;
 	}
 
