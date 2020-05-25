@@ -2789,7 +2789,6 @@ ssize_t oneplus_display_notify_fp_press(struct device *dev,
 		return count;
 	}
 
-	pr_err("notify fingerpress %d\n", onscreenfp_status);
 	oneplus_onscreenfp_status = onscreenfp_status;
 
 	drm_modeset_lock_all(drm_dev);
@@ -2830,7 +2829,6 @@ ssize_t oneplus_display_notify_dim(struct device *dev,
 	int err;
 	sscanf(buf, "%du", &dim_status);
 	//dim_status = !!dim_status;
-	pr_err("notify dim %d\n", dim_status);
 
 	if (display->panel->aod_status == 0 && (dim_status == 2)) {
 		pr_err("fp set it in normal status\n");

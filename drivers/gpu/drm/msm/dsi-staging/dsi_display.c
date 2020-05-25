@@ -7218,9 +7218,7 @@ int dsi_display_set_aod_mode(struct drm_connector *connector, int level)
 
 	panel = dsi_display->panel;
 	panel->aod_mode = level;
-	if (strcmp(dsi_display->panel->name, "samsung s6e3fc2x01 cmd mode dsi panel") == 0) {
-		printk(KERN_ERR "dsi_display_set_aod_mode\n");
-	} else {
+	if (!strcmp(dsi_display->panel->name, "samsung s6e3fc2x01 cmd mode dsi panel") == 0) {
 		dsi_display->panel->aod_mode = 0;
 		return 0;
 	}

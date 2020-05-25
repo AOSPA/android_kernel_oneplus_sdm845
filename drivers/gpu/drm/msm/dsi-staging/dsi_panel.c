@@ -4340,43 +4340,34 @@ int dsi_panel_set_aod_mode(struct dsi_panel *panel, int level)
 	mode = panel->cur_mode;
 	if (level == 1) {
 		if (panel->aod_status == 0) {
-			printk(KERN_ERR "send AOD ON commd mode 1 start \n");
 			rc = dsi_panel_tx_cmd_set(panel, DSI_CMD_SET_AOD_ON_1);
-			printk(KERN_ERR "send AOD ON commd mode 1 end \n");
 			panel->aod_status = 1;
 		}
 	} else if (level == 2) {
 		if (panel->aod_status == 0) {
 			panel->aod_status = 1;
-			printk(KERN_ERR "send AOD ON commd mode 2 start \n");
 			rc = dsi_panel_tx_cmd_set(panel, DSI_CMD_SET_AOD_ON_2);
 			aod_real_flag = false;
 			aod_complete = true;
-			printk(KERN_ERR "send AOD ON commd mode 2 end   \n");
 
 		}
 	} else {
 		if (panel->aod_status) {
 			panel->aod_status = 0;
-			printk(KERN_ERR "send AOD OFF commd start \n");
 			if (aod_real_flag) {
-				printk(KERN_ERR "send DSI_CMD_SET_AOD_OFF \n");
 				rc = dsi_panel_tx_cmd_set(panel, DSI_CMD_SET_AOD_OFF);
 			}
 			if (!aod_real_flag) {
-				printk(KERN_ERR "send DSI_CMD_SET_AOD_OFF_NEW \n");
 				rc = dsi_panel_tx_cmd_set(panel, DSI_CMD_SET_AOD_OFF_NEW);
 				rc = dsi_panel_update_backlight(panel,panel->bl_config.bl_level);
 			}
 			if (panel->display_mode != DISPLAY_MODE_DEFAULT)
 				dsi_panel_apply_display_mode(panel);
 
-			printk(KERN_ERR "send AOD OFF commd end \n");
 			aod_complete = false;
 		}
 	}
 
 	panel->aod_curr_mode = level;
-	pr_err("AOD MODE = %d\n", level);
 return rc;
 }

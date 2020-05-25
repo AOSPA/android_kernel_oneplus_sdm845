@@ -667,11 +667,9 @@ static int _sde_connector_update_hbm(struct sde_connector *c_conn)
 		if (fingerprint_mode) {
 			mutex_lock(&dsi_display->panel->panel_lock);
 			if (dsi_display->panel->aod_status == 1) {
-				printk(KERN_ERR "DSI_CMD_AOD_OFF_HBM_ON_SETTING\n");
 				rc = dsi_panel_tx_cmd_set_op(dsi_display->panel, DSI_CMD_AOD_OFF_HBM_ON_SETTING);
 				aod_real_flag = true;
 			} else {
-				printk(KERN_ERR "DSI_CMD_SET_HBM_ON_5\n");
 				rc = dsi_panel_tx_cmd_set_op(dsi_display->panel, DSI_CMD_SET_HBM_ON_5);
 			}
 			SDE_ATRACE_END("set_hbm_on");
@@ -684,19 +682,16 @@ static int _sde_connector_update_hbm(struct sde_connector *c_conn)
 			mutex_lock(&dsi_display->panel->panel_lock);
 			if (dsi_display->panel->aod_status == 1) {
 				if (oneplus_dim_status == 5) {
-					printk(KERN_ERR "DSI_CMD_SET_HBM_OFF \n");
 					rc = dsi_panel_tx_cmd_set_op(dsi_display->panel, DSI_CMD_SET_HBM_OFF);
 					aod_real_flag = true;
 					oneplus_dim_status = 0;
 
 				} else {
-					printk(KERN_ERR "DSI_CMD_HBM_OFF_AOD_ON_SETTING \n");
 					rc = dsi_panel_tx_cmd_set_op(dsi_display->panel, DSI_CMD_HBM_OFF_AOD_ON_SETTING);
 				}
 			}
 			else
 			{
-				printk(KERN_ERR "DSI_CMD_SET_HBM_OFF\n");
 				rc = dsi_panel_tx_cmd_set_op(dsi_display->panel, DSI_CMD_SET_HBM_OFF);
 			}
 			SDE_ATRACE_END("set_hbm_off");

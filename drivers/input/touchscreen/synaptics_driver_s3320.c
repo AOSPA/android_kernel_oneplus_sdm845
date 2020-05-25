@@ -3958,7 +3958,6 @@ static ssize_t tp_gesture_touch_hold_store(struct device *dev,
 		return size;
 	}
 
-	TPD_ERR("%s: set %d\n", __func__, tmp);
 	if (tmp == 2 && ts->fp_aod_cnt > 0) {
 		ts->fp_up_down = 0;
 		ts->unlock_succes = 1;
@@ -6313,8 +6312,6 @@ static int msm_drm_notifier_callback(
 	return 0;
 	if ((evdata) && (evdata->data) && (ts) && (ts->client)) {
 		blank = evdata->data;
-		TPD_ERR("%s blank[%d],event[0x%lx],evdata->id[%d]\n",
-			__func__, *blank, event, evdata->id);
 
 		if ((*blank == MSM_DRM_BLANK_UNBLANK_CUST)
 		&& (event == MSM_DRM_EARLY_EVENT_BLANK)) {
