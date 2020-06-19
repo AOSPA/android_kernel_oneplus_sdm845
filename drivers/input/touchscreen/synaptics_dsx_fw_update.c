@@ -2400,7 +2400,7 @@ static enum flash_area fwu_go_nogo(void)
 	} else if (image_fw_id < device_fw_id) {
 		TPD_ERR("%s: Image firmware ID older than device firmware ID\n",
 				__func__);
-		flash_area = UI_FIRMWARE;
+		flash_area = NONE;
 		goto exit;
 	}
 
@@ -2423,7 +2423,7 @@ static enum flash_area fwu_go_nogo(void)
 			flash_area = UI_CONFIG;
 			goto exit;
 		} else if (fwu->img.ui_config.data[ii] < fwu->config_id[ii]) {
-			flash_area = UI_CONFIG;
+			flash_area = NONE;
 			goto exit;
 		}
 	}
