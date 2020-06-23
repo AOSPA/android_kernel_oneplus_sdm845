@@ -1,6 +1,6 @@
 VERSION = 4
 PATCHLEVEL = 9
-SUBLEVEL = 218
+SUBLEVEL = 224
 EXTRAVERSION =
 NAME = Roaring Lionus
 
@@ -561,6 +561,8 @@ KBUILD_CFLAGS += $(call cc-option, -mno-global-merge,)
 KBUILD_CFLAGS += $(call cc-option, -fcatch-undefined-behavior)
 CLANG_FLAGS	+= -no-integrated-as
 CLANG_FLAGS	+= -Werror=unknown-warning-option
+CLANG_FLAGS	+= $(call cc-option, -Wno-misleading-indentation)
+CLANG_FLAGS	+= $(call cc-option, -Wno-bool-operation)
 KBUILD_CFLAGS	+= $(CLANG_FLAGS)
 KBUILD_AFLAGS	+= $(CLANG_FLAGS)
 else
@@ -772,13 +774,9 @@ export DISABLE_CFI
 endif
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
-KBUILD_CFLAGS	+= -Os
-else
-ifdef CONFIG_PROFILE_ALL_BRANCHES
-KBUILD_CFLAGS	+= -O2
+KBUILD_CFLAGS   += -Os
 else
 KBUILD_CFLAGS   += -O3
-endif
 endif
 
 # Tell gcc to never replace conditional load with a non-conditional one
